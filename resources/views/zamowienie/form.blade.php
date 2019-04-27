@@ -27,7 +27,7 @@
 	<div class="form-row">
 
 	    <div class="form-group col-md-6">
-	      <label for="frm_nazwa">Imię, Nazwisko 10</label>
+	      <label for="frm_nazwa">Imię, Nazwisko</label>
 	      <input type="text" class="form-control" id="" placeholder="Imię, Nazwisko">
 	    </div>
 
