@@ -1,0 +1,60 @@
+[2019-02-23 20:28:25] local.ERROR: Command "comman" is not defined.
+
+Did you mean one of these?
+    command:FinishesCreate
+    command:InitCreate
+    command:MediaCreate
+    command:StonesCreate
+    make:command {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"comman\" is not defined.
+
+Did you mean one of these?
+    command:FinishesCreate
+    command:InitCreate
+    command:MediaCreate
+    command:StonesCreate
+    make:command at /var/www/kd/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/kd/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('comman')
+#1 /var/www/kd/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /var/www/kd/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/kd/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/kd/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-02-23 20:28:46] local.ERROR: There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migration\" namespace.
+
+Did you mean this?
+    migrate at /var/www/kd/vendor/symfony/console/Application.php:578)
+[stacktrace]
+#0 /var/www/kd/vendor/symfony/console/Application.php(618): Symfony\\Component\\Console\\Application->findNamespace('migration')
+#1 /var/www/kd/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('migration:fresh')
+#2 /var/www/kd/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/kd/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/kd/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /var/www/kd/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-02-23 20:29:21] local.ERROR: Command "command:initCommand" is not defined.
+
+Did you mean one of these?
+    command:FinishesCreate
+    command:InitCreate
+    command:MediaCreate
+    command:StonesCreate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"command:initCommand\" is not defined.
+
+Did you mean one of these?
+    command:FinishesCreate
+    command:InitCreate
+    command:MediaCreate
+    command:StonesCreate at /var/www/kd/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/kd/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('command:initCom...')
+#1 /var/www/kd/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /var/www/kd/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/kd/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/kd/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
