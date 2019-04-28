@@ -108,7 +108,7 @@
 
 		  <div class="form-group col-md-2">
 		    <div class="custom-control custom-radio">      			
-      			<input type="radio" class="custom-control-input" name="stone_edge" value="1" id="stone_edge_radio_1">
+      			<input class="custom-control-input" type="radio" name="stone_edge" value="1" id="stone_edge_radio_1">
       			<label class="custom-control-label" for="stone_edge_radio_1">
       				<img src="/images/narozniki/k1.png" class="img-fluid"/>
       			</label>
@@ -118,11 +118,13 @@
 		  <div class="form-group col-md-2">
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="stone_edge" value="2" id="stone_edge_radio_2">
-		       <label class="form-check-label" for="radio_2">
+		       <label class="form-check-label" for="stone_edge_radio_2">
 		           <img src="/images/narozniki/k2.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
+		  
+
 		  <div class="form-group col-md-2">
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
