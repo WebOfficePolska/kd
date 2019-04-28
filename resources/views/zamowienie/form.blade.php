@@ -96,6 +96,22 @@
 	</div>
   
 	<div class="form-row">
+
+
+			@for ($i = 0; $i < 11; $i++)
+		  <div class="form-group col-md-2">
+		    <div class="custom-control custom-radio">      			
+      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}">
+      			<label class="custom-control-label" for="stone_edge_radio_{{ $i }}">
+      				<img src="/images/narozniki/k{{ $i }}.png" class="img-fluid"/>
+      			</label>
+		     </div>
+		  </div>
+			@endfor			
+
+
+
+
 	     
 		  <div class="form-group col-md-2">
 		    <div class="form-check">
