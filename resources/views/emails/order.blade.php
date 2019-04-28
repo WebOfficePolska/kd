@@ -6,6 +6,6 @@ Wybrany showroom: {{ $request->showroom_city}}
 
 Imię, Nazwisko: {{ $request->customer_name}}
 
-t: {{ customer_name }}
+t: {{ $customer_name }}
 
 @endcomponent
