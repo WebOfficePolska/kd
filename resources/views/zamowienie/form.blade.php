@@ -24,20 +24,33 @@
 					    	
 
 <form>
+
 	<div class="form-row">
 
+	  	{{ csrf_field() }}
+	  	<div class="form-group col-md-12">		  
+			<label for="showroom_city">Lokalizacja</label>	  		
+		  	<select name="showroom_city" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+		    	<option selected>Wybierz najbliższy showroom <b>kamien^design</b> ...</option>
+		    	<option value="1"> Showroom Poznań </option>
+		    	<option value="2"> Showroom Gdańsk </option>
+		    	<option value="3"> Showroom Gdynia </option>
+		  	</select>
+	  	</div>
+
+
 	    <div class="form-group col-md-6">
-	      <label for="frm_nazwa">Imię, Nazwisko</label>
-	      <input type="text" class="form-control" id="" placeholder="Imię, Nazwisko">
+	      <label for="customer_name">Imię, Nazwisko</label>
+	      <input type="text" class="form-control" id="" name="customer_name" placeholder="Imię, Nazwisko">
 	    </div>
 
 		<div class="col-md-6">
-	      <label for="frm_email">Email</label>
+	      <label for="customer_mail">Email</label>
 	      	<div class="input-group">
 	        	<div class="input-group-prepend">
 	          		<span class="input-group-text" id="inputGroupPrepend">@</span>
 	        	</div>
-	        	<input type="text" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend">
+	        	<input type="text" class="form-control" id="validationCustomUsername" name="customer_mail" placeholder="Email" aria-describedby="inputGroupPrepend">
 			</div>
 	    </div>
 
@@ -100,7 +113,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid" />
+		           <img src="/images/narozniki/k0.png" class="img-fluid" />
 		        </label>
 		     </div>
 		  </div>
@@ -108,7 +121,7 @@
 		    <div class="custom-control custom-radio">      			
       			<input type="radio" class="custom-control-input" name="gridRadios" id="customRadio">
       			<label class="custom-control-label" for="customRadio">
-      				<img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+      				<img src="/images/narozniki/k1.png" class="img-fluid"/>
       			</label>
 		     </div>
 		  </div>
@@ -116,7 +129,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k2.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -124,7 +137,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k3.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -132,7 +145,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k4.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -140,7 +153,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k5.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -148,7 +161,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k6.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -156,7 +169,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k7.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -164,7 +177,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k8.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -172,7 +185,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k9.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
@@ -180,7 +193,7 @@
 		    <div class="form-check">
 		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 		       <label class="form-check-label" for="gridRadios1">
-		           <img src="/images/narozniki/zwykly.png" class="img-fluid"/>
+		           <img src="/images/narozniki/k10.png" class="img-fluid"/>
 		        </label>
 		     </div>
 		  </div>
