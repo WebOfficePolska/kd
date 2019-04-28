@@ -23,7 +23,7 @@
 				    <div class="mt-5 mb-5">
 					    	
 
-						<form>
+						<form method="POST" action="{{ url('zamowienie/wyslij') }}">
 
 							<div class="form-row">
 

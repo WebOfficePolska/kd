@@ -28,27 +28,26 @@ class OrderController extends Controller
 
         request()->validate([
 
-            'mail_name' => 'required|min:2|max:50',
-            'mail_address' => 'required|email',
-            'mail_phone' => 'required|numeric',            
+            'customer_name' => 'required|min:2|max:150',
+            'customer_mail' => 'required|email',
+            // 'mail_phone' => 'required|numeric',            
 
         ], [
 
-            'mail_name.required' => 'Pole "Imię" jest wymagane.',
-            'mail_name.min' => 'Przynajmniej dwa znaki.',
-            'mail_name.max' => 'Maksymalnie 50 znaków.',
+            'customer_name.required' => 'Pole "Imię, Nazwisko" jest wymagane.',
+            'customer_name.min' => 'Przynajmniej dwa znaki.',
+            'customer_name.max' => 'Maksymalnie 150 znaków.',
 
-            'mail_address.required' => 'Pole "adres@mailowy" jest wymagane.',
-            'mail_phone.required' => 'Pole "Telefon" jest wymagane.',
+            'customer_mail.required' => 'Pole "Email" jest wymagane.',            
 
         ]);
 
 
 
-        Mail::to('klaudek@wop.pl')->send(new ContactForm($request->mail_name, $request->mail_address, $request->mail_phone, $request->mail_busines_name, $request->mail_title, $request->mail_text));
+        Mail::to('klaudek@wop.pl')->send(new OrderForm($request));
 
         //return View('kontakt.confirm');
-		return back()->with('success', 'Dziękujemy. Wiadomość została wysłana.');
+		return back()->with('success', 'Dziękujemy. Twoje zamówienie zostało przekazane do wyceny.');
 
 	}
 
