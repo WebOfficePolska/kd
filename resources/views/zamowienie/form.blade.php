@@ -67,29 +67,24 @@
         	@endforeach
       	</select>
 	</div>
+
 	<div class="form-group col-md-3">
     	<label for="stone_thickness">Grubość blatu</label>
     	<select id="" class="form-control" name="stone_thickness">
 			<option selected> wybierz </option>
-			@for ($i = 1; $i < 10; $i++)
-				<option value="{{ $i }}"> 1 cm </option>
+			@for ($i = 1; $i < 11; $i++)
+				<option value="{{ $i }}"> {{ $i }} cm </option>
 			@endfor			
       </select>
 	</div>
+
 	<div class="form-group col-md-3">
-    	<label for="frm_iloscelementow">Ilość elementów</label>
-    	<select id="" class="form-control">
+    	<label for="stone_elements">Ilość elementów</label>
+    	<select id="" class="form-control" name="stone_elements">
 			<option selected> wybierz </option>    		
-        	<option> 1  </option>
-        	<option> 2  </option>
-        	<option> 3  </option>
-        	<option> 4  </option>
-        	<option> 5  </option>
-        	<option> 6  </option>
-        	<option> 7  </option>
-        	<option> 8  </option>
-        	<option> 9  </option>
-        	<option> 10 </option>
+			@for ($i = 1; $i < 11; $i++)
+				<option value="{{ $i }}"> {{ $i }} </option>
+			@endfor			
       </select>
 	</div>
   </div>
@@ -104,24 +99,26 @@
 	     
 		  <div class="form-group col-md-2">
 		    <div class="form-check">
-		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-		       <label class="form-check-label" for="gridRadios1">
+		       <input class="form-check-input" type="radio" name="stone_edge" id="stone_edge_radio_0" value="0" checked>
+		       <label class="form-check-label" for="stone_edge_radio_0">
 		           <img src="/images/narozniki/k0.png" class="img-fluid" />
 		        </label>
 		     </div>
 		  </div>
+
 		  <div class="form-group col-md-2">
 		    <div class="custom-control custom-radio">      			
-      			<input type="radio" class="custom-control-input" name="gridRadios" id="customRadio">
-      			<label class="custom-control-label" for="customRadio">
+      			<input type="radio" class="custom-control-input" name="stone_edge" value="1" id="stone_edge_radio_1">
+      			<label class="custom-control-label" for="stone_edge_radio_1">
       				<img src="/images/narozniki/k1.png" class="img-fluid"/>
       			</label>
 		     </div>
 		  </div>
+
 		  <div class="form-group col-md-2">
 		    <div class="form-check">
-		       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-		       <label class="form-check-label" for="gridRadios1">
+		       <input class="form-check-input" type="radio" name="stone_edge" value="2" id="stone_edge_radio_2">
+		       <label class="form-check-label" for="radio_2">
 		           <img src="/images/narozniki/k2.png" class="img-fluid"/>
 		        </label>
 		     </div>
