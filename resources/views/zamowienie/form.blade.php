@@ -12,6 +12,26 @@
 
 		<div class="col-md-8 col-sm-12 d-flex align-items-center">
 
+	    @if (count($errors) > 0)
+	      <div class="col-md-6 alert alert-danger mt-5">
+	          <ul>
+	              @foreach ($errors->all() as $error)
+	              <li>{{ $error }}</li>
+	              @endforeach
+	          </ul>
+	      </div>
+	    @endif
+
+
+	    @if ($message = Session::get('success'))
+	          <div class="col-md-6 alert alert-success mt-5">
+	              <p>{{ $message }}</p>
+	          </div>
+	    @endif
+
+
+
+
 		    <div class="row" style="margin-top: 50pt;">
 				<div class="col-md-12 col-sm-12">
 				    <p class="header-text ">Proces składania ofert</p>
@@ -60,7 +80,7 @@
 							<div class="form-row">
 							   	<div class="form-group col-md-6">
 							    	<label for="stone_name">Nazwa kamienia</label>
-							    	<select id="" class="form-control" name="stone_name">
+							    	<select class="form-control" name="stone_name">
 										<option selected> wybierz </option>
 							    		@foreach($stones as $stone)
 							        	<option value="{{ $stone->id }}"> {{$stone->title}} </option>
