@@ -12,24 +12,26 @@
 
 		<div class="col-md-8 col-sm-12 d-flex align-items-center">
 
-	    @if (count($errors) > 0)
-	      <div class="col-md-6 alert alert-danger mt-5">
-	          <ul>
-	              @foreach ($errors->all() as $error)
-	              <li>{{ $error }}</li>
-	              @endforeach
-	          </ul>
-	      </div>
-	    @endif
+		    @if (count($errors) > 0)
+		    <div class="row">
+		    	<div class="col-md-12 alert alert-danger mt-5">
+		          <ul>
+		              @foreach ($errors->all() as $error)
+		              <li>{{ $error }}</li>
+		              @endforeach
+		          </ul>
+		      	</div>
+		    </div>
+		    @endif
 
 
-	    @if ($message = Session::get('success'))
-	          <div class="col-md-6 alert alert-success mt-5">
-	              <p>{{ $message }}</p>
-	          </div>
-	    @endif
-
-
+		    @if ($message = Session::get('success'))
+		    <div class="row">
+		          <div class="col-md-12 alert alert-success mt-5">
+		              <p>{{ $message }}</p>
+		          </div>
+		    </div>
+		    @endif
 
 
 		    <div class="row" style="margin-top: 50pt;">

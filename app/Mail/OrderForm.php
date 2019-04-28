@@ -19,6 +19,9 @@ class OrderForm extends Mailable
     public function __construct($request)
     {
 
+
+        $this->request          = $request;
+
         $this->showroom_city    = $request->showroom_city;
         $this->customer_name    = $request->customer_name;
         $this->customer_mail    = $request->customer_mail;
@@ -42,6 +45,6 @@ class OrderForm extends Mailable
 
         return $this->markdown('emails.order')
                     ->with('customer_name', $this->customer_name)
-                    ->with('request', $request);
+                    ->with('request', $this->request);
     }
 }
