@@ -296,7 +296,6 @@
 							</div>
 
 
-
 							<div class="form-row mt-5">
 								<div class="col-sm-12">
 						  			<button type="submit" class="button1 mt-3"> WYŚLIJ FORMULARZ </button>
