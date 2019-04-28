@@ -8,9 +8,9 @@
 
 	<div id="section_oferta" class="row mt-5" >
 
-		<div class="offset-md-1"></div>
+		<div class="offset-md-2"></div>
 
-		<div class="col-md-10 col-sm-12">
+		<div class="col-md-8 col-sm-12">
 
 		    @if (count($errors) > 0)
 		    <div class="row">
@@ -50,7 +50,7 @@
 							<div class="form-row">
 
 							  	{{ csrf_field() }}
-							  	<div class="form-group col-md-12">		  
+<!-- 							  	<div class="form-group col-md-12">		  
 									<label for="showroom_city">Lokalizacja</label>	  		
 								  	<select name="showroom_city" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
 								    	<option selected>Wybierz najbliższy showroom <b>kamien^design</b> ...</option>
@@ -58,7 +58,7 @@
 								    	<option value="2"> Showroom Gdańsk </option>
 								    	<option value="3"> Showroom Gdynia </option>
 								  	</select>
-							  	</div>
+							  	</div> -->
 
 
 							    <div class="form-group col-md-6">

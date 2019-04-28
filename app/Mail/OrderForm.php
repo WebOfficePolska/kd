@@ -19,17 +19,7 @@ class OrderForm extends Mailable
     public function __construct($request)
     {
 
-
-        $this->request          = $request;
-
-        $this->showroom_city    = $request->showroom_city;
-        $this->customer_name    = $request->customer_name;
-        $this->customer_mail    = $request->customer_mail;
-        $this->stone_name       = $request->stone_name;
-        $this->stone_thickness  = $request->stone_thickness;
-        $this->stone_elements   = $request->stone_elements;
-        $this->stone_edge       = $request->stone_edge;
-
+        $this->request = $request;
 
     }
 
@@ -43,8 +33,6 @@ class OrderForm extends Mailable
 
         $this->subject('Kontakt poprzez stronę internetową - kamien^design');
 
-        return $this->markdown('emails.order')
-                    ->with('customer_name', $this->customer_name)
-                    ->with('request', $this->request);
+        return $this->markdown('emails.order')->with('request', $this->request);
     }
 }
