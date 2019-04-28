@@ -59,28 +59,21 @@
 
   <div class="form-row">
     <div class="form-group col-md-6">
-    	<label for="frm_nazwakamienia">Nazwa kamienia</label>
-    	<select id="" class="form-control">
+    	<label for="stone_name">Nazwa kamienia</label>
+    	<select id="" class="form-control" name="stone_name">
 			<option selected> wybierz </option>
     		@foreach($stones as $stone)
-        	<option> {{$stone->title}} </option>
+        	<option value="{{ $stone->id }}"> {{$stone->title}} </option>
         	@endforeach
       	</select>
 	</div>
 	<div class="form-group col-md-3">
-    	<label for="frm_grubosc">Grubość blatu</label>
-    	<select id="" class="form-control">
-			<option selected> wybierz </option>    		
-        	<option> 1 cm </option>
-        	<option> 2 cm </option>
-        	<option> 3 cm </option>
-        	<option> 4 cm </option>
-        	<option> 5 cm </option>
-        	<option> 6 cm </option>
-        	<option> 7 cm </option>
-        	<option> 8 cm </option>
-        	<option> 9 cm </option>
-        	<option> 10 cm </option>
+    	<label for="stone_thickness">Grubość blatu</label>
+    	<select id="" class="form-control" name="stone_thickness">
+			<option selected> wybierz </option>
+			@for ($i = 1; $i < 10; $i++)
+				<option value="{{ $i }}"> 1 cm </option>
+			@endfor			
       </select>
 	</div>
 	<div class="form-group col-md-3">
