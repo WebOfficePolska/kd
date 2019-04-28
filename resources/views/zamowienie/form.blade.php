@@ -8,9 +8,9 @@
 
 	<div id="section_oferta" class="row mt-5" >
 
-		<div class="offset-md-2"></div>
+		<div class="offset-md-1"></div>
 
-		<div class="col-md-8 col-sm-12 d-flex align-items-center">
+		<div class="col-md-10 col-sm-12">
 
 		    @if (count($errors) > 0)
 		    <div class="row">
