@@ -63,7 +63,9 @@
 
               <div class="col-3 col-md-2 col-sm-4" style="padding-left:0;">
 
+                <!-- <div class="navbar-brand d-none d-lg-block">kamien^design</div> -->
                 <div class="navbar-brand d-none d-lg-block">kamien^design</div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
