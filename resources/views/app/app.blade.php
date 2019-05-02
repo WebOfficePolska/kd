@@ -6,7 +6,7 @@
     <meta name="description" content=" ">
 
     
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -87,121 +87,62 @@
 
 
   <div id="main_menu" class="container-fluid fixed-top bg_menu">
+
     <div class="row">
+
       <div class="offset-md-2 offset-sm-0"></div>
 
       <div class="col-12 col-md-8 col-sm-12">
 
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-    
-    <div class="col-md-0" style="padding-left: 0px;">
-    <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNavLinks" aria-controls="navbarNavLinks" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-    </button>
-    </div>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">            
+            <div class="col-md-0" style="padding-left: 0px;">
+              <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNavLinks" aria-controls="navbarNavLinks" aria-expanded="false" aria-label="Toggle navigation">
+          	     <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
 
-    <a class="navbar-brand col-md-1 col-sm-4 col-6 text-center" href="#" style="">kamien^design</a>
+            <a class="navbar-brand col-md-1 col-sm-4 col-6 text-center" href="#" style="">kamien^design</a>
 
-    <div class="collapse navbar-collapse justify-content-center  d-none d-lg-block" id="navbarNavLinks2">
-      <ul class="navbar-nav pl-0">
-        <li class="nav-item active mr-5">
-          <a class="nav-link" href="/">HOME</a>
-        </li>
-        <li class="nav-item mr-5">
-          <a class="nav-link" href="/kamienie">KAMIENIE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/kontakt">KONTAKT</a>
-        </li>
-      </ul>
-    </div>
+            <div class="collapse navbar-collapse justify-content-center  d-none d-lg-block" id="navbarNavLinks2">
+              <ul class="navbar-nav pl-0">
+                <li class="nav-item active mr-5">
+                  <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="/kamienie">KAMIENIE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/kontakt">KONTAKT</a>
+                </li>
+              </ul>
+            </div>
 
+            <div class="social_media order-last col-md-0" style="padding-right: 0; padding-left:0;">
+            	<ul class="list-inline" style="width: 60px;">
+            	    <li><a href="http://www.facebook.com/KamieÃ…-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a></li>
+            	    <li><a href="http://www.instagram.com/kamiendesign/" target="_blank"><i class="fab fa-1x fa-instagram mr-2 float-right"></i></a></li>
+            	</ul>
+            </div>
+        </nav>
 
+        <div class="collapse navbar-collapse order-last navbar-custom" id="navbarNavLinks">
+            <ul class="navbar-nav d-lg-none">
+              <li class="nav-item">
+                <a class="nav-link" href="/">HOME </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/kamienie">KAMIENIE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/kontakt">KONTAKT</a>
+              </li>
+            </ul>
 
-    <div class="social_media order-last col-md-0" style="padding-right: 0; padding-left:0;">
-	<ul class="list-inline" style="width: 60px;">
-	    <li><a href="http://www.facebook.com/KamieÃ…-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a></li>
-	    <li><a href="http://www.instagram.com/kamiendesign/" target="_blank"><i class="fab fa-1x fa-instagram mr-2 float-right"></i></a></li>
-	</ul>
-    </div>
-
-
-
-
-</nav>
-
-<div class="collapse navbar-collapse order-last navbar-custom" id="navbarNavLinks">
-    <ul class="navbar-nav d-lg-none">
-      <li class="nav-item">
-        <a class="nav-link" href="/">HOME </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/kamienie">KAMIENIE</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/kontakt">KONTAKT</a>
-      </li>
-    </ul>
-
-</div>
+        </div>
 
 
 
       </div>
-
-
-<!--
-      <div class="col-12 col-md-8 col-sm-12">
-
-        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-
-          <div class="row col-12 col-md-12 col-sm-12 align-items-center" style="padding-right:0;">
-
-              <div class="col-3 col-md-2 col-sm-4" style="padding-left:0;">
-
-                <div class="navbar-brand d-none d-lg-block">kamien^design</div>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  <div class="navbar-brand d-none d-lg-block">kamien^design</div>
-                </button>
-
-              </div>
-              <div class="col-6 col-md-8 col-sm-6">
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <ul class="navbar-nav ">
-                    
-                    <li class="nav-item mr-5">
-                      <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item mr-5">
-                      <a class="nav-link" href="/kamienie">KAMIENIE</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="/kontakt">KONTAKT</a>
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-
-    	    <div class="col-3 col-md-2 col-sm-2 social_media" style="padding-right: 0px;">
-    		<a href="http://www.facebook.com/KamieÃ…-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a>
-    		<a href="http://www.instagram.com/kamiendesign/" target="_blank"><i class="fab fa-1x fa-instagram mr-2 float-right"></i></a>
-    	    </div>
-
-
-          </div>
-
-
-
-
-        </nav>      
-      </div>      
--->
 
 
 
@@ -219,7 +160,6 @@
   <div>
     <hr />
   </div>
-
 
 
   <div id="section_bottom" class="container-fluid">

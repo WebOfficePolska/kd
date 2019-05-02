@@ -39,7 +39,7 @@
 				    <p class="header-text ">Proces składania ofert</p>
 				    <div class="underline my-3"></div>	
 				    <p>
-						Wypełnij te pola, których jesteś pewien. Im więcej informacji uzyskamy, tym sprawniej przygotujemy wycenę. Jeżeli nie masz wszystkich informacji, to śmiało skontaktuj się z nami drogą emailową, w ciągu 24h odpowiemy.				    
+						Wypełnij te pola, których jesteś pewien. Im więcej informacji uzyskamy, tym sprawniej przygotujemy wycenę. Jeżeli nie masz wszystkich informacji, to śmiało skontaktuj się z nami drogą e-mailową, w ciągu 24h odpowiemy.				    
 					</p>
 	
 				    <div class="mt-5 mb-5">
@@ -50,37 +50,40 @@
 							<div class="form-row">
 
 							  	{{ csrf_field() }}
-<!-- 							  	<div class="form-group col-md-12">		  
-									<label for="showroom_city">Lokalizacja</label>	  		
+ 							  	<div class="form-group col-md-12">		  
+									
 								  	<select name="showroom_city" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-								    	<option selected>Wybierz najbliższy showroom <b>kamien^design</b> ...</option>
-								    	<option value="1"> Showroom Poznań </option>
-								    	<option value="2"> Showroom Gdańsk </option>
-								    	<option value="3"> Showroom Gdynia </option>
+								    	<option selected>Wybierz najbliższą filię <b>kamien^design</b> ...</option>
+								    	<option value="1"> Poznań </option>
+								    	<option value="2"> Gdańsk </option>
+								    	<option value="3"> Gdynia </option>
 								  	</select>
-							  	</div> -->
+							  	</div>
 
 
-							    <div class="form-group col-md-6">
-							      <label for="customer_name">Imię, Nazwisko</label>
-							      <input type="text" class="form-control" id="" name="customer_name" placeholder="Imię, Nazwisko">
+							    <div class="form-group col-md-4">
+							      <input type="text" class="form-control" id="" name="customer_name" placeholder="Imię, Nazwisko" required>
 							    </div>
 
-								<div class="col-md-6">
-							      <label for="customer_mail">Email</label>
+								<div class="col-md-4">
 							      	<div class="input-group">
 							        	<div class="input-group-prepend">
 							          		<span class="input-group-text" id="inputGroupPrepend">@</span>
 							        	</div>
-							        	<input type="text" class="form-control" id="validationCustomUsername" name="customer_mail" placeholder="Email" aria-describedby="inputGroupPrepend">
+							        	<input type="text" class="form-control" id="validationCustomUsername" name="customer_mail" placeholder="E-mail" aria-describedby="inputGroupPrepend" required>
 									</div>
 							    </div>
+
+							    <div class="form-group col-md-4">
+							      <input type="tel" class="form-control" id="" name="customer_phone" placeholder="Nr telefonu" required>
+							    </div>
+
 
 							</div>
 
 
 							<div class="form-row">
-							   	<div class="form-group col-md-6">
+							   	<div class="form-group col-md-3">
 							    	<label for="stone_name">Nazwa kamienia</label>
 							    	<select class="form-control" name="stone_name">
 										<option selected> wybierz </option>
@@ -90,18 +93,30 @@
 							      	</select>
 								</div>
 
+							   	<div class="form-group col-md-3">
+							    	<label for="stone_name">Struktura powierzchni</label>
+							    	<select class="form-control" name="stone_name">
+										<option selected> wybierz </option>
+							    		@foreach($stones as $stone)
+							        	<option value="{{ $stone->id }}"> {{$stone->title}} </option>
+							        	@endforeach
+							      	</select>
+								</div>
+
+
+
 								<div class="form-group col-md-3">
 							    	<label for="stone_thickness">Grubość blatu</label>
 							    	<select id="" class="form-control" name="stone_thickness">
 										<option selected> wybierz </option>
-										@for ($i = 1; $i < 11; $i++)
+										@for ($i = 2; $i < 4; $i++)
 											<option value="{{ $i }}"> {{ $i }} cm </option>
 										@endfor			
 							      </select>
 								</div>
 
 								<div class="form-group col-md-3">
-							    	<label for="stone_elements">Ilość elementów</label>
+							    	<label for="stone_elements">Sugerowana ilość elementów</label>
 							    	<select id="" class="form-control" name="stone_elements">
 										<option selected> wybierz </option>    		
 										@for ($i = 1; $i < 11; $i++)
@@ -119,8 +134,13 @@
 							</div>
 						  
 
+
+							<div>
+								<p>standardowa</p>
+							</div>
+
 							<div class="form-row">
-								@for ($i = 0; $i < 11; $i++)
+								@for ($i = 0; $i < 1; $i++)
 								<div class="form-group col-md-2">
 								    <div class="custom-control custom-radio">      			
 						      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}">
@@ -131,6 +151,29 @@
 								</div>
 								@endfor			
 							</div>
+
+
+							<div>
+								<p>niestandardowa</p>
+							</div>
+	
+
+							<div class="form-row">
+								@for ($i = 1; $i < 11; $i++)
+								<div class="form-group col-md-2">
+								    <div class="custom-control custom-radio">      			
+						      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}">
+						      			<label class="custom-control-label" for="stone_edge_radio_{{ $i }}">
+						      				{{ $i }} <img src="/images/narozniki/k{{ $i }}.png" class="img-fluid"/>
+				      					</label>
+						      			
+
+								     </div>
+								</div>
+								@endfor			
+							</div>
+
+
 
 
 						  	<div class="form-row mt-5">
@@ -190,6 +233,7 @@
 							        	<option value="1 otwór"> 1 otwór </option>
 							        	<option value="2 otwory"> 2 otwory </option>
 							        	<option value="3 otwory"> 3 otwory </option>
+							        	<option value="4 otwory"> więcej </option>
 							      </select>
 								</div>
 
@@ -238,27 +282,15 @@
 
 							<div class="form-row">
 								<div class="form-group col-md-3">
-							    	<label for="socle_height">Wysokość cokołu</label>
-							    	<select class="form-control">
-										<option selected> wybierz </option>
-							        	<option value="10 cm"> 10 cm </option>
-							        	<option value="15 cm"> 15 cm</option>
-							        	<option value="20 cm"> 20 cm </option>
-							        	<option value="25 cm"> 25 cm </option>
-							        	<option value="30 cm"> 30 cm </option>
-							        	<option value="35 cm"> 35 cm </option>
-							      	</select>
+							    	<label for="socle_height">Wysokość cokołu (cm)</label>
+							    	<input type="number" name="socle_height" class="form-control" min="1">
 								</div>
 
 								<div class="form-group col-md-3">
-							    	<label for="socle_thickness">Grubość cokołu</label>
-							    	<select class="form-control" name="socle_thickness">
-										<option selected> wybierz </option>
-							        	<option value="1 cm"> 1 cm </option>
-							        	<option value="2 cm"> 2 cm </option>
-							        	<option value="3 cm"> 3 cm </option>
-							      	</select>
+							    	<label for="socle_thickness">Grubość cokołu (cm)</label>
+							    	<input type="number" name="socle_thickness" class="form-control" min="1">
 								</div>
+
 
 								<div class="form-group col-md-3">
 							    	<label for="prepare">Przygotowanie materiału</label>
@@ -271,7 +303,7 @@
 								</div>
 
 								<div class="form-group col-md-3">
-							    	<label for="address">Adres montażu</label>
+							    	<label for="address">Miejsce montażu</label>
 							    	<select class="form-control" name="address">
 							    		<option selected> wybierz </option>
 							        	<option value="dom jednorodzinny"> dom jednorodzinny </option>
