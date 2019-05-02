@@ -95,7 +95,7 @@
 
 							   	<div class="form-group col-md-3">
 							    	<label for="stone_name">Struktura powierzchni</label>
-							    	<select class="form-control" name="stone_name">
+							    	<select class="form-control" name="stone_type">
 										<option selected> wybierz </option>
 							    		@foreach($stones as $stone)
 							        	<option value="{{ $stone->id }}"> {{$stone->title}} </option>
@@ -326,6 +326,30 @@
 							      </select>
 								</div>
 							</div>
+
+
+							<div class="form-row">
+								<div class="form-group col-md-12">
+							    	<label for="place_invest">Miejsce inwestycji</label>
+							    	<textarea class="form-control" id="place_invest" rows="3" placeholder="Proszę opisać miejsce imwestycji, address"></textarea>
+								</div>								
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-12">
+							    	<label for="place_invest">Inne informacje</label>
+							    	<textarea class="form-control" id="place_invest" rows="3" placeholder="Inne informacje, które mogą być przydatne przy wycenie"></textarea>
+								</div>								
+							</div>
+
+
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									    <label for="project_file">Pliki projektu</label>
+    									<input type="file" class="form-control-file" id="project_file">
+								</div>								
+							</div>
+
 
 
 							<div class="form-row mt-5">
