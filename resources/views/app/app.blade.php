@@ -120,7 +120,7 @@
 
     <div class="social_media order-last col-md-0" style="padding-right: 0; padding-left:0;">
 	<ul class="list-inline" style="width: 60px;">
-	    <li><a href="http://www.facebook.com/KamieÅ-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a></li>
+	    <li><a href="http://www.facebook.com/KamieÃ…-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a></li>
 	    <li><a href="http://www.instagram.com/kamiendesign/" target="_blank"><i class="fab fa-1x fa-instagram mr-2 float-right"></i></a></li>
 	</ul>
     </div>
@@ -189,7 +189,7 @@
               </div>
 
     	    <div class="col-3 col-md-2 col-sm-2 social_media" style="padding-right: 0px;">
-    		<a href="http://www.facebook.com/KamieÅ-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a>
+    		<a href="http://www.facebook.com/KamieÃ…-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a>
     		<a href="http://www.instagram.com/kamiendesign/" target="_blank"><i class="fab fa-1x fa-instagram mr-2 float-right"></i></a>
     	    </div>
 
@@ -239,15 +239,15 @@
                   &nbsp; <br>
                   &nbsp;
 <!--                   ul. Mickiewicza 30/3</br>
-                  60-506 PoznaÅ„ </br>
+                  60-506 PoznaÃ…â€ž </br>
                   tel. 875 654 254 </br>
                   mail: <a href="mailto:info@kamiendesign.com">info@kamiendesign.com</a> -->
                 </p>
               </div>
               <div class="col-md-3 col-sm-6">
-                <h6>Showroom PoznaÅ„</h6>
+                <h6>Showroom Poznań</h6>
                 <p>
-                  ul. CzechosÅ‚owacka 104A<br>
+                  ul. Czechosłowacka 104A<br>
                   (w budynku Sofa & Friends)<br>
                   Pn-pt 10:00-18:00<br>
                   Sb 10:00-16:00 <br>
@@ -255,7 +255,7 @@
                 </p>
               </div>
               <div class="col-md-3 col-sm-6">
-                <h6>Showroom GdaÅ„sk</h6>
+                <h6>Showroom Gdańsk</h6>
                 <p>
                   al. Grunwaldzka 303</br>
                   (przy CH Oliwa)</br>
@@ -290,7 +290,7 @@
     <div class="row bottom2 pt-3 pb-3">
       <div class="offset-md-2"></div>
       <div class="col-md-8 col-sm-12>
-        <span class="copyright">&copy; 2018 All Rights Reserved </span> KamieÅ„ Design
+        <span class="copyright">&copy; 2018 All Rights Reserved </span> KamieÃ…â€ž Design
       </div>
       <div class="col-md-2">
       </div>
