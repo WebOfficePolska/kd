@@ -5,7 +5,7 @@
 
 
 
-	<div id="section_kontakt" class="row d-flex flex-column align-items-center mt-5">
+	<div id="section_kontakt" class="row d-flex flex-column align-items-center mt-5" style="min-height: 70vh">
 
     @if (count($errors) > 0)
       <div class="col-md-6 alert alert-danger mt-5">
@@ -36,7 +36,7 @@
 		</div>
 
 
-		<div class="col-md-4 mb-4">
+		<div class="col-md-4 mb-4" id="app">
 
 			<form  method="POST" action="{{ url('kontakt/wyslij') }}">
 			  {{ csrf_field() }}
@@ -67,7 +67,7 @@
 			    <input type="text" class="form-control" id="telefon" aria-describedby="telefon" placeholder="Telefon" name="mail_phone">
 	          	@if ($errors->has('mail_phone'))
                 <span class="text-danger">{{ $errors->first('mail_phone') }}</span>
-            	@endif			    
+            	@endif
 			  </div>
 			  <div class="form-group">
 			    <input type="text" class="form-control" id="nazwa_firmy" aria-describedby="nazwa_firmy" placeholder="Nazwa firmy" name="mail_busines_name">		    

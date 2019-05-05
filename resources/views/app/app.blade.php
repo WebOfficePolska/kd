@@ -111,6 +111,11 @@
                 <li class="nav-item mr-5">
                   <a class="nav-link" href="/kamienie">KAMIENIE</a>
                 </li>
+
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="/oferta">OFERTA</a>
+                </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="/kontakt">KONTAKT</a>
                 </li>
@@ -133,6 +138,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/kamienie">KAMIENIE</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/oferta">OFERTA</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="/kontakt">KONTAKT</a>
               </li>
