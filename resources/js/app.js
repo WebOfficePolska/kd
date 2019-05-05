@@ -7,7 +7,13 @@
 
 require('./bootstrap');
 
+
 window.Vue = require('vue');
+
+import VueRouter from 'vue-router';
+import BootstrapVue from 'bootstrap-vue';
+
+Vue.use(BootstrapVue);
 
 /**
  * The following block of code may be used to automatically register your
@@ -29,9 +35,99 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
+
+
+    el: '#app',
+
+    mounted: function () {
+    	console.log("mounted...");
+    },
+
+
+    computed: {
+      customerName() {
+        return this.customer_name.length > 2 ? true : false
+      }
+    },
+
+
+    data: {
+
+    	stones: [],
+
+    	percent: 0,
+    	message: " ",    	
+    	project_file: null,
+    },
+
+
+    methods: {
+
+
+    	uploadFile: function(){
+
+    		var _this = this;
+    		var elmnt = document.getElementById("project_file");
+    		console.log(elmnt.files[0]);
+    		var fd = new FormData();
+
+    		fd.append("project_file", elmnt.files[0], elmnt.files[0].name);
+
+    		axios.post("/api/zamowienie/zapisz", 
+    			fd,	
+    			{	headers: {
+        				'Content-Type': 'multipart/form-data'
+    				},
+    				onUploadProgress: function(progressEvent){
+     					_this.percent = parseInt( Math.round( ( progressEvent.loaded * 100 ) / progressEvent.total ) ); 						
+    				},    				
+    			},
+
+    		)
+    		.then ( function(res) {    				
+    				_this.project_file = "Plik: " + res.data.project_file;	
+    			}.bind(this))
+    		.catch ( function(e){
+    			    _this.message = "Wystąpił błąd.";	
+    				console.log(e);
+    		});
+    	},	
+
+    },
 });
 
+
+
+
+
+
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+
+	$('[data-toggle="tooltip"]').tooltip()
+
+
+	$('#stone_name').change(function(e){
+
+	        var stone_id = $(this).val();
+
+	    	$('#stone_type').empty();
+	    	$("#stone_type").append('<option value="">Wybierz...</option>');
+
+	        $.get({
+	            url: "/api/stone/show/" + stone_id
+	        }).done(function(response) {
+
+	        	$.each(response, function(key, data){
+
+
+						$("#stone_type").append('<option value="' + data.stone_type + '">' + data.stone_type + '</option>');
+
+
+	        	});
+
+	        });
+
+	});
+
+
 })

@@ -29,6 +29,7 @@ Route::post('/kontakt/wyslij', 'ContactController@send');
 Route::get('/zamowienie', 'OrderController@index');
 Route::get('/zamowienie/formularz', 'OrderController@form');
 Route::post('/zamowienie/wyslij', 'OrderController@send');
+// Route::post('/zamowienie/zapisz', 'OrderController@upload');
 
 
 Route::get('/mediaresource/create', 'MediaresourceController@create');

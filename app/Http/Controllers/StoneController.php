@@ -17,6 +17,57 @@ use QrCode;
 class StoneController extends Controller
 {
     
+
+
+	/*
+	Pobiera wszystkie kamienie i zwraza poprzez API
+	*/
+    public function all(){
+        $stones = Stone::all();
+        return response()->json($stones);        
+    }
+
+
+
+	/*
+	Pobiera wszystkie kamienie i zwraza poprzez API
+	*/
+    public function finishes(Request $request){
+		$id = $request->id;
+   		$finishes = Finish::where('stone_id',$id)->get();
+
+   		$c = [];
+
+
+   		foreach ($finishes as $key1) {
+   			
+   			foreach ($key1->toArray() as $key => $value) {
+   				
+   				if ($value==1 && $key!="id" && $key!="stone_id") {
+
+   					array_push($c, ["stone_type" => $key]);
+   				}
+   				//echo "k: " . $key . " v: " . $value . "<br>";
+
+   			}
+
+
+   		}
+
+
+    // $filtered = $finishes->filter(function ($value, $key) {
+
+     	//echo "eee: " . $finishes[0];
+    //     //return $value = 1;
+    // });
+
+        return response()->json($c);
+        // return response()->json(['finishes' => $finishes]);        
+    }
+
+
+
+
 	
 	public function show(Request $request){
 

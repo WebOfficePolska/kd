@@ -28,7 +28,7 @@
 		<div class="col-md-6 text-center mt-5 mb-1">
 			<p class="header-text text-dark">Co możemy dla Ciebie zrobić?</p>
 		    
-		    <p class="lead1 text-dar">
+		    <p class="lead1">
 		    	Nie znalazłeś tego czego potrzebujesz? Masz pytania odnośnie kamienia? <br>
 		    	Napisz do nas a odpowiedź otrzymasz maksymalnie w ciągu 24 godzin.
 		    </p>

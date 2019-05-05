@@ -14,7 +14,28 @@
 
 		<div class="col-md-8 col-sm-12">
 
-	
+		    @if (count($errors) > 0)
+		    <div class="row">
+		    	<div class="col-md-12 alert alert-danger mt-5">
+		          <ul>
+		              @foreach ($errors->all() as $error)
+		              <li>{{ $error }}</li>
+		              @endforeach
+		          </ul>
+		      	</div>
+		    </div>
+		    @endif
+
+
+		    @if ($message = Session::get('success'))
+		    <div class="row">
+		          <div class="col-md-12 alert alert-success mt-5">
+		              <p>{{ $message }}</p>
+		          </div>
+		    </div>
+		    @endif
+
+
 		    <div class="row" style="margin-top: 50pt;">
 				<div class="col-md-12 col-sm-12">
 				    <p class="header-text ">Proces składania ofert</p>
@@ -26,44 +47,70 @@
 				    <div class="mt-5 mb-5">
 					    	
 
-				    	<form action="/zamowienie/wyslij" method="POST" id="form_zamowienie">
+				    	<form @submit.prevent="uploadOrder">
 
 							<div class="form-row">
 
 								@csrf
 
  							  	<div class="form-group col-md-12">		  
-								  	<select name="showroom_city" class="form-control my-1 mr-sm-2" id="showroom_city" required="true" filter="email">
-								    	<option value="" selected>Wybierz najbliższą filię <b>kamien^design</b> ...</option>
-								    	<option value="poznan@kamiendesign.pl"> Poznań </option>
-								    	<option value="gdansk@kamiendesign.pl"> Gdańsk </option>
-								    	<option value="gdynia@kamiendesign.pl"> Gdynia </option>
+								  	<select name="showroom_city" class="custom-select my-1 mr-sm-2" id="showroom_city">
+								    	<option selected>Wybierz najbliższą filię <b>kamien^design</b> ...</option>
+								    	<option value="1"> Poznań </option>
+								    	<option value="2"> Gdańsk </option>
+								    	<option value="3"> Gdynia </option>
 								  	</select>
-								  	<b-form-invalid-feedback id="customer_mail_err_message"> To pole jest wymagane, proszę wskazać najbliższą filię kamien^design</b-form-invalid-feedback>
 							  	</div>
 
 
-							    <div class="form-group col-md-4">							  
-									<input type="text" class="form-control" id="customer_name" name="customer_name" value="" required="true" filter="char" placeholder="Imię, Nazwisko" />
-									<b-form-invalid-feedback id="customer_mail_err_message"> To pole jest wymagane, proszę podać imię i nazwisko</b-form-invalid-feedback>					
+							    <div class="form-group col-md-4">							      
+							            <b-form-input
+								          id="customer_name"
+								          v-model="customer_name"
+								          :state="customer_name.$dirty ? !customer_name.$error : null"
+								          aria-describedby="customer_name_err_message"
+								          placeholder="Imię, Nazwisko"
+								        ></b-form-input>		
+								        <b-form-invalid-feedback id="customer_name_err_message">
+								          To pole jest wymagane, proszę podać imię i nazwisko
+								        </b-form-invalid-feedback>
 							    </div>
 
-								<div class="form-group col-md-4">
+								<div class="col-md-4">
 							      	<div class="input-group">
 							        	<div class="input-group-prepend">
 							          		<span class="input-group-text" id="inputGroupPrepend">@</span>
 							        	</div>
-										<input type="mail" class="form-control" id="customer_mail" name="customer_mail" required="true" filter="email" placeholder="E-mail">
-										<b-form-invalid-feedback id="customer_mail_err_message"> To pole jest wymagane, proszę podać e-mail</b-form-invalid-feedback>					
-									</div>							
-							        
+							            <b-form-input
+							              type="email"
+								          id="customer_mail"
+								          v-model="customer_mail"
+								          v-validate="'required|email'"
+								          :state="Boolean(customer_mail) ? Boolean(customer_mail) : null"
+								          aria-describedby="customer_mail_err_message"
+								          placeholder="E-mail"
+								        ></b-form-input>		
+								        <b-form-invalid-feedback id="customer_name_err_message">
+								          To pole jest wymagane, proszę podać e-mail
+								        </b-form-invalid-feedback>
+									</div>
 							    </div>
 
 							    <div class="form-group col-md-4">							      
-										<input type="tel" class="form-control" id="customer_phone" name="customer_phone" required="true" filter="telefon" placeholder="Nr telefonu" />
+							            <b-form-input
+							              type="tel"
+								          id="customer_phone"
+								          v-model="customer_phone"
+								          v-validate="{ required: true, min:5 }"
+								          :state="Boolean(customer_phone)"
+								          aria-describedby="customer_phone_err_message"
+								          placeholder="Nr telefonu"
+								        ></b-form-input>		
 								        <b-form-invalid-feedback id="customer_phone_err_message">
 								          To pole jest wymagane, proszę podać nr telefonu
 								        </b-form-invalid-feedback>
+
+
 							    </div>
 							</div>
 
@@ -71,8 +118,8 @@
 							<div class="form-row">
 							   	<div class="form-group col-md-3">
 							    	<label for="stone_name">Nazwa kamienia</label>
-							    	<select class="form-control" name="stone_name" id="stone_name">
-							    		<option selected> wybierz </option>
+							    	<select class="form-control" name="stone_name">
+										<option selected> wybierz </option>
 							    		@foreach($stones as $stone)
 							        	<option value="{{ $stone->id }}"> {{$stone->title}} </option>
 							        	@endforeach
@@ -81,7 +128,7 @@
 
 							   	<div class="form-group col-md-3">
 							    	<label for="stone_name">Struktura powierzchni</label>
-							    	<select class="form-control" name="stone_type" id="stone_type">
+							    	<select class="form-control" name="stone_type">
 										<option selected> wybierz </option>
 							    		@foreach($stones as $stone)
 							        	<option value="{{ $stone->id }}"> {{$stone->title}} </option>
@@ -126,7 +173,7 @@
 								@for ($i = 0; $i < 1; $i++)
 								<div class="form-group col-md-2">
 								    <div class="custom-control custom-radio">      			
-						      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}" checked>
+						      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}">
 						      			<label class="custom-control-label" for="stone_edge_radio_{{ $i }}">
 						      				<img src="/images/narozniki/k{{ $i }}.png" class="img-fluid"/>
 						      			</label>
@@ -341,31 +388,35 @@
 									    </label>
     									<b-form-file  
     										name="project_file" id="project_file" 
-    										v-model="project_file" 
+    										v-model="file" 
+
     										placeholder="Wybierz plik ..." drop-placeholder="Drop file here..."
 											accept=".jpg, .pdf, .zip">   											
     									</b-form-file>
-    									<input type="hidden" name="project_file_after_" :value="project_file">
-    									<progress :value="percent" max="100"></progress> @{{percent}}%
-    									<br>
-    									<b-button class="mt-3 btn-light btn-outline-secondary" @click="uploadFile">Załaduj plik projektu</b-button>
-    									<b-button class="mt-3 btn-light btn-outline-secondary" @click="project_file = null; percent=0">Wyczyść pole pliki projektu</b-button>
+    									<b-button class="mt-3" @click="file = null">Wyczyść pole pliki projektu</b-button>
     									<!-- <input type="file" class="form-control pt-3 pb-5" name="project_file" id="project_file"> -->
 								</div>								
 	
-<!-- 								<div class="form-group col-md-12">
+								<div class="form-group col-md-12">
 									<b-progress :value="percent" :max="max" show-progress animated></b-progress>
 								</div>
- -->							</div>
+							</div>
 
 
-
-
-
+ 							<b-alert v-model="showSuccessAlert" variant="success" dismissible fade class="my-3"> 
+ 								<h4>Zamowienie zostało wysłane</h4>
+ 								<p>
+ 									Dziękujemy za przekazanie zamowienia. Twoje zamówienie zostało zarejestrowane w systemie. W ciągu 24 godzin nasz przedstawiciel skontaktuje się w celu przedstawienia informacji dotyczących wyceny. 									
+ 								</p>
+ 								<hr>
+ 								<p>
+ 									W każdym momencie możesz skontaktować się z naszymi pracownikami poprzez e-mail, lub telefonicznie.
+ 								</p>
+ 							</b-alert>
 
 							<div class="form-row mt-5">
 								<div class="col-sm-12">
-						  			<button type="submit" class="button1 btn-dark mt-3"> WYŚLIJ FORMULARZ </button>
+						  			<button type="submit" class="button1 mt-3"> WYŚLIJ FORMULARZ </button>
 						  		</div>
 							</div>
 
@@ -385,8 +436,6 @@
 	
 
 	</div>
-
-
 
 
 @stop

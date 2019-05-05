@@ -17,3 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+Route::get('/stone/all', 'StoneController@all');
+Route::get('/stone/show/{id}', 'StoneController@finishes');
+Route::post('/zamowienie/zapisz', 'OrderController@upload');
+Route::get('/zamowienie/resp', 'OrderController@resp');

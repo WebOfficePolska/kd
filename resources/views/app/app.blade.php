@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content=" ">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <script src="{{ asset('js/app.js') }}"></script>
+
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 
 
 
@@ -237,6 +237,31 @@
     </div>
 
   </div>
+
+
+  <script src="{{ asset('js/app.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script> -->
+
+
+  <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/valida.2.1.5.js') }}"></script>
+
+
+  <script>
+
+      $(document).ready(function(){
+
+          $('#form_zamowienie').valida();
+
+          $('[id="customer_phone"]').mask("+48-000-000-000", {
+                placeholder: "Nr telefonu"
+          });
+
+      });
+
+  </script>
 
 
 
