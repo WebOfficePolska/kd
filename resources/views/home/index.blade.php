@@ -73,6 +73,15 @@
 }
 
 
+
+
+.anchor {
+    padding-top: 120px;
+    margin-top: -65px;
+}
+
+
+
 	</style>
 
 
@@ -214,20 +223,41 @@
  -->
 
 
-	<div id="section2" class="row mt-5 mb-5 idea">
+	<div id="oferta" class="row mt-5 mb-5 idea">
 		<div class="offset-md-2"></div>
 		<div class="col-md-8">
 	
 			<div class="row" >
-				<div class="col-md-12 text-center align-self-center ">
+				<div class="col-md-12 text-center align-self-center " >
+
+					<div class="anchor" id="top"></div>
 
 					<div>
-						<p class="header-text header-text-color2">Ideaaaaaaaaa</p>		
+						<p class="header-text header-text-color2">OFERTA</p>		
 					</div>				    
 
 					<div class="d-flex justify-content-center mb-3">
 						<div class="underline"></div>
 					</div>				    
+
+
+				    <div class="idea-content2 justify-content-left mt-5">
+					    <p class="text-left">
+Szukasz kamienia naturalnego ze sprawdzonego źródła i jesteś we właściwym miejscu. 
+W kamień^design  wytwarzamy i montujemy <strong>blaty kuchenne i łazienkowe, posadzki, obudowy ścian lub schodów, obudowy kominków, parapety</strong> oraz kamienne elementy dekoracyjne wykonane z <strong>marmuru, kwarcytu, granitu oraz wapienia.</strong>
+						</p>
+						<p class="text-left">
+Jesteśmy specjalistami <strong>w dziedzinie kamienia naturalnego.</strong> Dobrze selekcjonujemy materiał, doradzamy w kwestiach technicznych, zajmujemy się obróbką i montażem. 
+Dlatego śmiało podejmujemy się zadań o najwyższym stopniu trudności <a href="/galeria">(galeria)</a>.
+W pracy z kamieniem wykorzystujemy <strong> najbardziej zaawansowane technologicznie maszyny.</strong> Kamień przycinamy do Twoich potrzeb, a dla najwyższej precyzji wykorzystujemy technologie maszyn sterowanych numerycznie (CNC) oraz cięcia wodą (waterjet). 
+W  ofercie kamień^design znajdziesz <a href="/kamienie"> kilkadziesiąt gatunków kamienia</a>, które dobraliśmy tak, by zaspokoić Twoje wymagania względem jakości, estetyki oraz funkcjonalności. To nie wszystko! Ponieważ na stałe współpracujemy z dostawcami z Polski i innych krajów świata, możemy zrealizować projekty z niemal każdego wybranego przez ciebie kamienia.
+						</p>
+						<p class="text-left">
+Wszystkie nasze materiały oraz przykładowe aranżacje możesz obejrzeć w każdym z naszych showroomów w Gdańsku, Gdyni i Poznaniu. Tam też porównasz je z innymi materiałami będącymi w ofercie naszej marki partnerskiej <a href="http://deskadesign.pl" target="_blank"> Deska Design</a>, 
+Jeżeli masz pytanie odnośnie naszej oferty to zadzwoń pod numer widoczny w stopce lub prześlij nam zapytanie poprzez formularz dostępny w zakładce <a href="/kontakt"> kontakt.</a>
+						</p>
+
+				    </div>
 
 
 					<div class="row idea-content1 pt-4 pb-4">
@@ -286,18 +316,7 @@
 					</div>
 
 
-				    <div class="idea-content2 justify-content-left mt-3">
-					    <p class="text-left">
-							Dostarczamy kamień naturalny na potrzeby inwestycji indywidualnych i komercyjnych. Nasz
-							zespół składa się ze specjalistów w dziedzinie kamienia naturalnego: selekcji materiałów,
-							doradztwa technicznego, obróbki i montażu. W ofercie znajdziesz kilkadziesiąt gatunków
-							kamienia, dobranych tak, by zaspokoić Twoje wymagania względem jakości, estetyki oraz
-							funkcjonalności. Nasze materiały możesz obejrzeć i porównać z innymi, będącymi w ofercie
-							marki partnerskiej <a href="http://deskadesign.pl" target="_blank"> Deska Design</a>, w każdym z naszych showroomów w <a href="/kontakt"> Gdańsku, Gdyni i
-							Poznaniu</a>.
-					    </p>
 
-				    </div>
 
 
 <!-- 					<div class="d-flex justify-content-center mb-3">

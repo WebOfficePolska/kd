@@ -76,6 +76,7 @@
 }
 
 
+
 </style>
 
 
@@ -101,20 +102,27 @@
               </button>
             </div>
 
-            <a class="navbar-brand col-md-1 col-sm-4 col-6 text-center" href="#" style="">kamien^design</a>
+            <a class="navbar-brand col-md-1 col-sm-4 col-6 text-center" href="/" style="">kamien^design</a>
 
             <div class="collapse navbar-collapse justify-content-center  d-none d-lg-block" id="navbarNavLinks2">
               <ul class="navbar-nav pl-0">
-                <li class="nav-item active mr-5">
+                
+                <li class="nav-item active mr-3">
                   <a class="nav-link" href="/">HOME</a>
                 </li>
-                <li class="nav-item mr-5">
+
+                <li class="nav-item mr-3">
+                  <a class="nav-link" href="/#oferta">OFERTA</a>
+                </li>
+
+                <li class="nav-item mr-3">
                   <a class="nav-link" href="/kamienie">KAMIENIE</a>
                 </li>
 
-                <li class="nav-item mr-5">
-                  <a class="nav-link" href="/oferta">OFERTA</a>
+                <li class="nav-item mr-3">
+                  <a class="nav-link" href="/kamienie">GALERIA</a>
                 </li>
+
 
                 <li class="nav-item">
                   <a class="nav-link" href="/kontakt">KONTAKT</a>
@@ -135,12 +143,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="/">HOME </a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/#oferta">OFERTA</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="/kamienie">KAMIENIE</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/oferta">OFERTA</a>
+                <a class="nav-link" href="/galeria">GALERIA</a>
               </li>
 
               <li class="nav-item">
