@@ -107,25 +107,25 @@
             <div class="collapse navbar-collapse justify-content-center  d-none d-lg-block" id="navbarNavLinks2">
               <ul class="navbar-nav pl-0">
                 
-                <li class="nav-item active mr-3">
+                <li class="nav-item active mr-4">
                   <a class="nav-link" href="/">HOME</a>
                 </li>
 
-                <li class="nav-item mr-3">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="/#oferta">OFERTA</a>
                 </li>
 
-                <li class="nav-item mr-3">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="/kamienie">KAMIENIE</a>
                 </li>
 
-                <li class="nav-item mr-3">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="/kamienie">GALERIA</a>
                 </li>
 
 
-                <li class="nav-item">
-                  <a class="nav-link" href="/kontakt">KONTAKT</a>
+                <li class="nav-item" style="border: 1px solid #ccc">
+                  <a class="nav-link" href="/kontakt" >KONTAKT</a>
                 </li>
               </ul>
             </div>
