@@ -21,6 +21,7 @@ Route::get('/kamienie/bezebrazy', ['uses' => 'CollectionController@kolekcje','id
 Route::get('/kamienie/{id}/getpdf','StoneController@getPDF');
 Route::get('/kamienie/{id}/{title?}', 'StoneController@show')->name('kamien.show');
 Route::get('/oferta', 'OfferController@index');
+Route::get('/galeria', 'GalleryController@index');
 Route::get('/blog', 'BlogController@index')->name('blog');
 
 Route::get('/inspiracje', function () {return view('inspiracje/index');});

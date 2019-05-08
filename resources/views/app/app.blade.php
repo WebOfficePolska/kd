@@ -118,7 +118,7 @@
                 </li>
 
                 <li class="nav-item mr-4">
-                  <a class="nav-link" href="/kamienie">GALERIA</a>
+                  <a class="nav-link" href="/galeria">GALERIA</a>
                 </li>
 
 
