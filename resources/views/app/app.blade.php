@@ -251,7 +251,7 @@
     <div class="row bottom2 pt-3 pb-3">
       <div class="offset-md-2"></div>
       <div class="col-md-8 col-sm-12>
-        <span class="copyright">&copy; 2018 All Rights Reserved </span> KamieÃ…â€ž Design
+        <span class="copyright">&copy; 2018 All Rights Reserved </span> Kamień Design
       </div>
       <div class="col-md-2">
       </div>

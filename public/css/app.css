@@ -16170,6 +16170,7 @@ body {
   font-family: "Metropolis Bold";
   font-size: 8pt;
   font-weight: bold;
+  padding: 4px 0 1px 0;
 }
 
 .dropdown-item {
