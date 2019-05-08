@@ -89,59 +89,60 @@
 					@foreach ($stones as $stone)
 
 							@if ($stone->filename == "slider_5c7933c8708aa.jpg" || 
-								$stone->filename == "slider_5c7933c9e26b1.jpg" || 
-								$stone->filename == "slider_5c7933d1e8f6d.jpg" ||
-								$stone->filename == "slider_5c7933d2e0da1.jpg" ||
-								$stone->filename == "slider_5c7933cb284b9.jpg" ||
-$stone->filename == "slider_5c7933cdaee0c.jpg" || 
-$stone->filename == "slider_5c7933d0c5505.jpg" || 
-$stone->filename == "slider_5c7933d3d33bb.jpg" || 
-$stone->filename == "slider_5c7933d4d36a5.jpg" || 
-$stone->filename == "slider_5c7933d8ad41e.jpg" || 
-$stone->filename == "slider_5c7933d9a1b11.jpg" || 
-$stone->filename == "slider_5c7933da8dd3f.jpg" || 
-$stone->filename == "slider_5c7933dc17852.jpg" || 
-$stone->filename == "slider_5c7933df68790.jpg" || 
-$stone->filename == "slider_5c7933e3e8e1d.jpg" || 
-$stone->filename == "slider_5c7933e4ebd45.jpg" || 
-$stone->filename == "slider_5c7933e5ec787.jpg" || 
-$stone->filename == "slider_5c7933e710a41.jpg" ||
+								$stone->filename == "slider_5c793a28a7318.jpg" || 
+								$stone->filename == "slider_5c793a2738537.jpg" ||
+$stone->filename == "slider_5c793a29da6af.jpg" || 
+$stone->filename == "slider_5c793a316085a.jpg" || 
+$stone->filename == "slider_5c793a3256c53.jpg" || 
+$stone->filename == "slider_5c793a335730a.jpg" || 
+$stone->filename == "slider_5c793a35023ae.jpg" || 
+$stone->filename == "slider_5c793a37459cc.jpg" || 
+$stone->filename == "slider_5c793a3830a52.jpg" || 
+$stone->filename == "slider_5c793a391eba6.jpg" || 
+$stone->filename == "slider_5c793a3a8972d.jpg" || 
+$stone->filename == "slider_5c793a3d9ec15.jpg" || 
+$stone->filename == "slider_5c793a3f8367b.jpg" || 
+$stone->filename == "slider_5c793a424d399.jpg" || 
+$stone->filename == "slider_5c793a433789b.jpg" || 
+$stone->filename == "slider_5c793a441be08.jpg" || 
+$stone->filename == "slider_5c793a4505ed1.jpg" || 
+$stone->filename == "slider_5c793a45f05e1.jpg" || 
+$stone->filename == "slider_5c793a46d64e7.jpg" || 
+$stone->filename == "slider_5c793a47c8713.jpg" || 
+$stone->filename == "slider_5c793a48c73d0.jpg" || 
+$stone->filename == "slider_5c793a49d7f29.jpg" || 
+$stone->filename == "slider_5c793a4b9b7fb.jpg" || 
+$stone->filename == "slider_5c793a4c97cfd.jpg" || 
+$stone->filename == "slider_5c793a4d948bb.jpg" || 
+$stone->filename == "slider_5c793a4ea95a5.jpg" || 
+$stone->filename == "slider_5c793a4fadf60.jpg" || 
+$stone->filename == "slider_5c793a50a8374.jpg" || 
+$stone->filename == "slider_5c793a51a4e4d.jpg" || 
+$stone->filename == "slider_5c793a52971f6.jpg" || 
+$stone->filename == "slider_5c793a52dc398.jpg" || 
+$stone->filename == "slider_5c793a53ded36.jpg" || 
+$stone->filename == "slider_5c793a5536608.jpg" || 
+$stone->filename == "slider_5c793a56bdb71.jpg" || 
+$stone->filename == "slider_5c793a5a8a24b.jpg" || 
+$stone->filename == "slider_5c793a5f38b0c.jpg" || 
+$stone->filename == "slider_5c793a62ed683.jpg" || 
+$stone->filename == "slider_5c793a648e94b.jpg" || 
+$stone->filename == "slider_5c793a65b61a4.jpg" || 
+$stone->filename == "slider_5c793a66f3a27.jpg" || 
+$stone->filename == "slider_5c793a6746d3e.jpg" || 
+$stone->filename == "slider_5c793a6ea3cd9.jpg" || 
+$stone->filename == "slider_5c793a71825c1.jpg" || 
+$stone->filename == "slider_5c793a726a5d4.jpg" || 
+$stone->filename == "slider_5c793a7395e4a.jpg" || 
+$stone->filename == "slider_5c793a7455702.jpg" || 
+$stone->filename == "slider_5c793a757860d.jpg" || 
+$stone->filename == "slider_5c793a7672b90.jpg" || 
+$stone->filename == "slider_5c793a7771819.jpg" ||
 
-$stone->filename == "slider_5c7933d67aff3.jpg" || 
-$stone->filename == "slider_5c7933e14a58f.jpg" || 
-$stone->filename == "slider_5c7933e81033e.jpg" || 
-$stone->filename == "slider_5c7933e90b02a.jpg" || 
-$stone->filename == "slider_5c7933ea1b44b.jpg" || 
-$stone->filename == "slider_5c7933eb109ea.jpg" || 
-$stone->filename == "slider_5c7933ecd7322.jpg" || 
-$stone->filename == "slider_5c7933eddcf75.jpg" || 
-$stone->filename == "slider_5c7933eee23ed.jpg" || 
-$stone->filename == "slider_5c7933efc7eed.jpg" || 
-$stone->filename == "slider_5c7933f0d17b7.jpg" || 
-$stone->filename == "slider_5c7933f1d8609.jpg" || 
-$stone->filename == "slider_5c7933f2cf56a.jpg" || 
-$stone->filename == "slider_5c7933f3ca477.jpg" || 
-$stone->filename == "slider_5c7933f420504.jpg" || 
-$stone->filename == "slider_5c7933f524c22.jpg" || 
-$stone->filename == "slider_5c7933f66ab2b.jpg" || 
-$stone->filename == "slider_5c7933f813ba5.jpg" || 
-$stone->filename == "slider_5c7933fb9a391.jpg" || 
-$stone->filename == "slider_5c79340075458.jpg" || 
-$stone->filename == "slider_5c7934044b57d.jpg" || 
-$stone->filename == "slider_5c793405ec845.jpg" || 
-$stone->filename == "slider_5c793407309ea.jpg" || 
-$stone->filename == "slider_5c79340887e47.jpg" || 
-$stone->filename == "slider_5c793408d35b3.jpg" || 
-$stone->filename == "slider_5c79340d39b49.jpg" ||
-
-$stone->filename == "slider_5c7934101765b.jpg" ||
-$stone->filename == "slider_5c793412d943e.jpg" ||
-$stone->filename == "slider_5c793413cb836.jpg" ||
-$stone->filename == "slider_5c7934159e04b.jpg" ||
-$stone->filename == "slider_5c7934164e48a.jpg" ||
-$stone->filename == "slider_5c79341775c4c.jpg" ||
-$stone->filename == "slider_5c7934187e901.jpg" ||
-$stone->filename == "slider_5c79341986ab5.jpg" 
+$stone->filename == "slider_5c793a2c5954e.jpg" || 
+$stone->filename == "slider_5c793a2f7fc29.jpg" || 
+$stone->filename == "slider_5c793a3061a68.jpg" || 
+$stone->filename == "slider_5c793a6bc0db2.jpg" 
 
 
 								)
@@ -149,12 +150,12 @@ $stone->filename == "slider_5c79341986ab5.jpg"
 							@else
 									<div class="col-md-3 col-sm-3 col-6 mb-4">
 										<div>
-											<a href="">
+											<a href="/kamienie/{{ $stone->stone_id }}/{{ $stone->title }}">
 												<img src="{{ $stone->thumbnail_path}}/{{ $stone->filename }}" class="img-fluid w-100" />
 											</a>
 										</div>
 										<div>
-				                        	<a href="" class="title text-capitalize small">{{ $stone->title }}</a> <BR>
+				                        	<a href="/kamienie/{{ $stone->stone_id }}/{{ $stone->title }}" class="title text-capitalize small">{{ $stone->title }}</a> <BR>
 				                        </div>
 									</div>
 							@endif

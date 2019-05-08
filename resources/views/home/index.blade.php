@@ -244,7 +244,7 @@
 				    <div class="idea-content2 justify-content-left mt-5">
 					    <p class="text-left">
 Szukasz kamienia naturalnego ze sprawdzonego źródła i jesteś we właściwym miejscu. 
-W kamień^design  wytwarzamy i montujemy <strong>blaty kuchenne i łazienkowe, posadzki, obudowy ścian lub schodów, obudowy kominków, parapety</strong> oraz kamienne elementy dekoracyjne wykonane z <strong>marmuru, kwarcytu, granitu oraz wapienia.</strong>
+W Kamień Design  wytwarzamy i montujemy <strong>blaty kuchenne i łazienkowe, posadzki, obudowy ścian lub schodów, obudowy kominków, parapety</strong> oraz kamienne elementy dekoracyjne wykonane z <strong>marmuru, kwarcytu, granitu oraz wapienia.</strong>
 						</p>
 						<p class="text-left">
 Jesteśmy specjalistami <strong>w dziedzinie kamienia naturalnego.</strong> Dobrze selekcjonujemy materiał, doradzamy w kwestiach technicznych, zajmujemy się obróbką i montażem. 
