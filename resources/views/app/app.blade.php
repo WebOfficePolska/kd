@@ -36,14 +36,12 @@
 <style>
 
 .navbar {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
 }
 
 
 .navbar-brand {
     margin-right: 0px !important;
-    font-size: 17pt; 
+    font-size: 18pt; 
     padding-left:0px; 
     padding-right: 0px;
 }
@@ -130,7 +128,7 @@
               </ul>
             </div>
 
-            <div class="social_media order-last col-md-0" style="padding-right: 0; padding-left:0;">
+            <div class="social_media order-last col-md-0" style="padding-right: 11pt; _padding-left:0;">
             	<ul class="list-inline" style="width: 60px;">
             	    <li><a href="http://www.facebook.com/KamieÃ…-design-2375571439122572" target="_blank"><i class="fab fa-1x fa-facebook float-right"></i> </a></li>
             	    <li><a href="http://www.instagram.com/kamiendesign/" target="_blank"><i class="fab fa-1x fa-instagram mr-2 float-right"></i></a></li>
