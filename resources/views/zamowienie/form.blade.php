@@ -83,10 +83,10 @@
 							    	<label for="stone_name">Struktura powierzchni</label>
 							    	<select class="form-control" name="stone_type" id="stone_type">
 										<option selected> wybierz </option>
-							    		@foreach($stones as $stone)
+<!-- 							    		@foreach($stones as $stone)
 							        	<option value="{{ $stone->title }}"> {{$stone->title}} </option>
 							        	@endforeach
-							      	</select>
+ -->							      	</select>
 								</div>
 
 
@@ -124,7 +124,7 @@
 
 							<div class="form-row">
 								@for ($i = 0; $i < 1; $i++)
-								<div class="form-group col-md-2">
+								<div class="form-group col-md-2 col-sm-4 col-4">
 								    <div class="custom-control custom-radio">      			
 						      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}" checked>
 						      			<label class="custom-control-label" for="stone_edge_radio_{{ $i }}">
@@ -143,7 +143,7 @@
 
 							<div class="form-row">
 								@for ($i = 1; $i < 11; $i++)
-								<div class="form-group col-md-2">
+								<div class="form-group col-md-2 col-sm-4 col-4">
 								    <div class="custom-control custom-radio">      			
 						      			<input class="custom-control-input" type="radio" name="stone_edge" value="{{ $i }}" id="stone_edge_radio_{{ $i }}">
 						      			<label class="custom-control-label" for="stone_edge_radio_{{ $i }}">
@@ -167,7 +167,7 @@
 								</div>
 								
 								@for ($i = 1; $i < 5; $i++)
-								<div class="form-group col-md-2">
+								<div class="form-group col-md-2  col-sm-6 col-6">
 								    <div class="custom-control custom-radio">      			
 						      			<input class="custom-control-input" type="radio" name="stone_width_type" value="{{ $i }}" id="stone_width_radio_{{ $i }}">
 						      			<label class="custom-control-label" for="stone_width_radio_{{ $i }}">
@@ -176,7 +176,7 @@
 								     </div>
 								</div>
 								@endfor
-								<div class="col-md-12">
+								<div class="form-group col-md-12 col-sm-12 col-12">
 								Docelowa grubość krawędzi: <input type="number" name="stone_width_size"> (cm)
 								</div>
 
@@ -372,11 +372,11 @@
     										placeholder="Wybierz plik ..." drop-placeholder="Drop file here..."
 											accept=".jpg, .pdf, .zip">   											
     									</b-form-file>
-    									<input type="hidden" name="project_file_after" :value="project_file"> @{{project_file}}
+    									<input type="hidden" name="project_file_after" :value="project_file">
     									<progress :value="percent" max="100"></progress> @{{percent}}%
     									<br>
-    									<b-button class="mt-3 btn-light btn-outline-secondary" @click="uploadFile">Załaduj plik projektu</b-button>
-    									<b-button class="mt-3 btn-light btn-outline-secondary" @click="project_file = null; percent=0">Wyczyść pole pliki projektu</b-button>
+    									<b-button class="col-sm-4  mt-3 btn-light btn-outline-secondary" @click="uploadFile">Załaduj plik projektu</b-button>
+    									<b-button class="col-sm-4  mt-3 btn-light btn-outline-secondary" @click="project_file = null; percent=0">Wyczyść pole pliki projektu</b-button>
     									<!-- <input type="file" class="form-control pt-3 pb-5" name="project_file" id="project_file"> -->
 								</div>								
 	
