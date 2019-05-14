@@ -257,7 +257,7 @@
 							        	<option value="1 otwór"> 1 otwór </option>
 							        	<option value="2 otwory"> 2 otwory  </option>
 							        	<option value="3 otwory"> 3 otwory </option>
-							        	<option value="4 otwory"> 3 otwory </option>
+							        	<option value="4 otwory"> 4 otwory </option>
 							        	<option value="5 otworów"> 5 otworów </option>
 							        	<option value="6 otworów"> 6 otworów </option>
 							      </select>
