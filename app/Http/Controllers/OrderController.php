@@ -49,8 +49,9 @@ class OrderController extends Controller
         $attach = request()->project_file_after;
 
 
-        Mail::to(request()->showroom_city)->send(new OrderForm($request));
+        // Mail::to(request()->showroom_city)->send(new OrderForm($request));
             // ->attach('',$attach);
+        Mail::to('m.brzeski@nowykamieniarz.pl')->send(new OrderForm($request));
         Mail::to('klaudek@wop.pl')->send(new OrderForm($request));
 
 
