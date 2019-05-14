@@ -46,7 +46,9 @@ class OrderController extends Controller
         ]);
 
 
-        //Mail::to('klaudek@wop.pl')->send(new OrderForm($request));
+
+        Mail::to('klaudek@wop.pl')->send(new OrderForm($request));
+
 
         return View('zamowienie.confirmorder');
 		

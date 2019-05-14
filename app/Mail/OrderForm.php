@@ -7,6 +7,9 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
+use App\Stone;
+
+
 class OrderForm extends Mailable
 {
     use Queueable, SerializesModels;
@@ -21,6 +24,13 @@ class OrderForm extends Mailable
 
         $this->request = $request;
 
+        $oStone = Stone::find($request->stone_name);
+
+        $this->stone_name = $oStone->title;
+
+
+
+
     }
 
     /**
@@ -33,6 +43,8 @@ class OrderForm extends Mailable
 
         $this->subject('Kontakt poprzez stronę internetową - kamien^design');
 
-        return $this->markdown('emails.order')->with('request', $this->request);
+        return $this->markdown('emails.order')
+            ->with('request', $this->request)
+            ->with('stone_name', $this->stone_name);
     }
 }
