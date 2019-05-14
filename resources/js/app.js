@@ -85,7 +85,7 @@ const app = new Vue({
 
     		)
     		.then ( function(res) {    				
-    				_this.project_file = "Plik: " + res.data.project_file;	
+    				_this.project_file = res.data.project_file;	
     			}.bind(this))
     		.catch ( function(e){
     			    _this.message = "Wystąpił błąd.";	

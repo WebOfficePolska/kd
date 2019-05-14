@@ -372,7 +372,7 @@
     										placeholder="Wybierz plik ..." drop-placeholder="Drop file here..."
 											accept=".jpg, .pdf, .zip">   											
     									</b-form-file>
-    									<input type="hidden" name="project_file_after_" :value="project_file">
+    									<input type="hidden" name="project_file_after" :value="project_file"> @{{project_file}}
     									<progress :value="percent" max="100"></progress> @{{percent}}%
     									<br>
     									<b-button class="mt-3 btn-light btn-outline-secondary" @click="uploadFile">Załaduj plik projektu</b-button>

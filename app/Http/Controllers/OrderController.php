@@ -46,11 +46,15 @@ class OrderController extends Controller
         ]);
 
 
+        $attach = request()->project_file_after;
 
+
+        Mail::to(request()->showroom_city)->send(new OrderForm($request));
+            // ->attach('',$attach);
         Mail::to('klaudek@wop.pl')->send(new OrderForm($request));
 
 
-        return View('zamowienie.confirmorder');
+        return View('zamowienie.confirmorder', ['project_file_after' => $attach]);
 		
 
 	}
@@ -64,7 +68,7 @@ class OrderController extends Controller
         ]);
 
 
-        $fileName = "fileName".time().'.'.request()->project_file->getClientOriginalExtension();
+        $fileName = "projekt_".time().'.'.request()->project_file->getClientOriginalExtension();
 
         $request->project_file->storeAs('projects',$fileName);
 

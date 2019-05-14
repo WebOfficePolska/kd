@@ -82325,7 +82325,7 @@ var app = new Vue({
           _this.percent = parseInt(Math.round(progressEvent.loaded * 100 / progressEvent.total));
         }
       }).then(function (res) {
-        _this.project_file = "Plik: " + res.data.project_file;
+        _this.project_file = res.data.project_file;
       }.bind(this))["catch"](function (e) {
         _this.message = "Wystąpił błąd.";
         console.log(e);
@@ -82496,8 +82496,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/kd/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/kd/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/mini/Desktop/Praca/Projekty/kd/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/mini/Desktop/Praca/Projekty/kd/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

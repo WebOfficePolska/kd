@@ -19,6 +19,8 @@ Grubość blatu: {{ $request->stone_thickness }} cm.
 Sugerowana ilość elementów: {{ $request->stone_elements }} szt.
 
 
+
+
 ----- Krawędzie blatu -----
 
 Obróbka krawędzi blatu: {{ $request->stone_edge }} (nr krawędzi)
@@ -26,6 +28,8 @@ Obróbka krawędzi blatu: {{ $request->stone_edge }} (nr krawędzi)
 Rodzaj pogrubianej krawędzi: {{ $request->stone_width_type}} (nr pogrubienia)
 
 Docelowa grubość krawędzi: {{ $request->stone_width_size}} 
+
+
 
 
 ----- Obróbka otworów -----
@@ -45,6 +49,8 @@ Kontakty:  {{ $request->electric_contact_hole }}
 Pozostałe otwory:  {{ $request->other_hole }}
 
 
+
+
 ----- Elementy ścienne, przygotowanie i montaż -----
 
 Wysokość cokołu:   {{ $request->socle_height }} (cm)
@@ -59,7 +65,8 @@ Miejsce inwestycji:   {{ $request->place_invest }}
 
 Inne informacje:   {{ $request->other_info }}
 
-Plik projektu:  {{ $request->project_file }}
+Plik projektu:  <a href="{{ asset('storage/projects/'.$request->project_file_after) }}">klik</a>
+
 
 
 
