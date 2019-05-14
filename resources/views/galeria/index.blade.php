@@ -142,9 +142,10 @@ $stone->filename == "slider_5c793a7771819.jpg" ||
 $stone->filename == "slider_5c793a2c5954e.jpg" || 
 $stone->filename == "slider_5c793a2f7fc29.jpg" || 
 $stone->filename == "slider_5c793a3061a68.jpg" || 
-$stone->filename == "slider_5c793a6bc0db2.jpg" 
-
-
+$stone->filename == "slider_5c793a6bc0db2.jpg" ||
+$stone->filename == "slider_5c793a6c82476.jpg" ||
+$stone->filename == "slider_5c793a678e2bd.jpg" ||
+$stone->filename == "slider_5c793a268d9c5.jpg" 
 								)
 
 							@else

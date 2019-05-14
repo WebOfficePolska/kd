@@ -105,7 +105,7 @@
             <div class="collapse navbar-collapse justify-content-center  d-none d-lg-block" id="navbarNavLinks2">
               <ul class="navbar-nav pl-0">
                 
-                <li class="nav-item active mr-4">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="/">HOME</a>
                 </li>
 
@@ -192,7 +192,10 @@
           <div class="row align-items-center">
             
               <div class="col-md-3 col-sm-6 text-center">
+		<div class="">
                 <h4 class="kd-font">kamien^design</h4>
+		<h6 class="">#wnętrza #architektura</h6>
+		</div>
                 <p class="text-center">
                   <span class="" style="font-size: 10pt; color: #000;"><!-- iCon by oNlineWebFonts.Com --> 
                     <img src="/images/phone.png" width="16" height="16"> +48 668 838 638</span> <br>
