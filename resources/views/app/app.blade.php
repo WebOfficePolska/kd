@@ -193,19 +193,16 @@
             
               <div class="col-md-3 col-sm-6 text-center">
 		            <div class="row">
+
+                  <div class="col"></div>
                   <div class="col">
-                    
-                  </div>
-                  <div class="col">
-                    <h4 class="kd-font text-left">kamien^design</h4>
+                    <h4 class="kd-font text-left mb-0">kamien^design</h4>
                     <h6 class="text-left">#wnętrza #architektura</h6>                    
                   </div>
-                  <div class="col">
-                    
-                  </div>
+                  <div class="col"></div>
 
 		            </div>
-                <p class="text-center">
+                <p class="text-center mt-3">
                   <span class="" style="font-size: 10pt; color: #000;"><!-- iCon by oNlineWebFonts.Com --> 
                     <img src="/images/phone.png" width="16" height="16"> +48 668 838 638</span> <br>
                   &nbsp; <br>
