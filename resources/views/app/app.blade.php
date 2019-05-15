@@ -191,12 +191,12 @@
         <div class="col-md-8 col-sm-12">
           <div class="row align-items-center">
             
-              <div class="col-md-3 col-sm-6 text-center">
+              <div class="col-md-3 col-sm-6 text-center mt-3">
 		            <div class="row">
 
                   <div class="col"></div>
                   <div class="col">
-                    <h4 class="kd-font text-left mb-0">kamien^design</h4>
+                    <h4 class="kd-font text-left mb-1">kamien^design</h4>
                     <h6 class="text-left">#wnętrza #architektura</h6>                    
                   </div>
                   <div class="col"></div>
