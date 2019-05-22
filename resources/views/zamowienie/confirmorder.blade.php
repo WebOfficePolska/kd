@@ -24,7 +24,7 @@
 					<div class="alert" variant="success" fade class="my-3"> 
 
 						<p class="lead1">
-							Dziękujemy za przekazanie zamowienia. Twoje zamówienie zostało zarejestrowane w systemie. W ciągu 24 godzin nasz przedstawiciel skontaktuje się w celu przedstawienia informacji dotyczących wyceny. 									
+							Dziękujemy za przekazanie zamowienia. Twoje zamówienie zostało zarejestrowane w systemie. Maksymalnie do 24 godzin nasz przedstawiciel skontaktuje się w celu przedstawienia informacji dotyczących wyceny. 									
 						</p>
 						<hr>
 						<p>

@@ -324,7 +324,13 @@
 
   <script type="text/javascript">
     if (document.cookie.indexOf("ModalShown=true")<0) {
-        $("#myModal").modal("show");
+        
+        if (window.location.pathname=="/rodo") {
+            $("#myModal").modal("hide");  
+        } else {
+            $("#myModal").modal("show");
+        }
+        
         //Modal has been shown, now set a cookie so it never comes back
         $("#myModalClose").click(function () {
             $("#myModal").modal("hide");

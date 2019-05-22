@@ -14,25 +14,25 @@ Nazwa kamienia: {{ $stone_name }}
 
 Struktura powierzchni: {{ $request->stone_type }}
 
-Grubość blatu: {{ $request->stone_thickness }} cm.
+Grubość blatu: {{ $request->stone_thickness }} cm
 
 Sugerowana ilość elementów: {{ $request->stone_elements }} szt.
 
 
 
 
------ Krawędzie blatu -----
+## Krawędzie blatu -----
 
 Obróbka krawędzi blatu: {{ $request->stone_edge }} (nr krawędzi)
 
 Rodzaj pogrubianej krawędzi: {{ $request->stone_width_type}} (nr pogrubienia)
 
-Docelowa grubość krawędzi: {{ $request->stone_width_size}} 
+Docelowa grubość krawędzi: {{ $request->stone_width_size}} cm
 
 
 
 
------ Obróbka otworów -----
+## Obróbka otworów -----
 
 Rodzaj płyty grzewczej: {{ $request->plate_type }}
 
@@ -51,11 +51,11 @@ Pozostałe otwory:  {{ $request->other_hole }}
 
 
 
------ Elementy ścienne, przygotowanie i montaż -----
+## Elementy ścienne, przygotowanie i montaż -----
 
-Wysokość cokołu:   {{ $request->socle_height }} (cm)
+Wysokość cokołu:   {{ $request->socle_height }} cm
 
-Grubość cokołu:   {{ $request->socle_thickness }} (cm)
+Grubość cokołu:   {{ $request->socle_thickness }} cm
 
 Przygotowanie materiału:   {{ $request->prepare }}
 
@@ -64,10 +64,8 @@ Miejsce montażu:   {{ $request->address }}
 Miejsce inwestycji:   {{ $request->place_invest }}
 
 Inne informacje:   {{ $request->other_info }}
-
-Plik projektu:  <a href="{{ asset('storage/projects/'.$request->project_file_after) }}">klik</a>
-
-
+	
+Plik projektu: {{{  $project_file_after }}}	
 
 
 @endcomponent

@@ -28,7 +28,16 @@ class OrderForm extends Mailable
 
         $this->stone_name = $oStone->title;
 
+        if (empty($request->project_file_after)) {
+            
+            $this->project_file_after = "Nie dołączono pliku projektu";
+        
+        } else {
+            
+            $this->project_file_after = asset('storage/projects/'. $request->project_file_after);
+        }
 
+        
 
 
     }
@@ -45,6 +54,7 @@ class OrderForm extends Mailable
 
         return $this->markdown('emails.order')
             ->with('request', $this->request)
+            ->with('project_file_after', $this->project_file_after)
             ->with('stone_name', $this->stone_name);
     }
 }
