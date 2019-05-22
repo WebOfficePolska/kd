@@ -79,10 +79,53 @@
 
 
 
+
 </head>
 
 
 <body>
+
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Polityka Prywatności</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Zapoznaj się z naszą <a href="/rodo"> polityką prywatności </a>- dowiedz się, jakie dane o Tobie zbieramy i dlaczego oraz jakich rodzajów Cookies używamy i do czego nam służą.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="button_rodo_ok" type="button" class="btn btn-danger w-100" data-dismiss="modal">Akceptuję</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div id="main_menu" class="container-fluid fixed-top bg_menu">
@@ -279,6 +322,22 @@
   <script type="text/javascript" src="{{ asset('js/valida.2.1.5.js') }}"></script>
 
 
+  <script type="text/javascript">
+    if (document.cookie.indexOf("ModalShown=true")<0) {
+        $("#myModal").modal("show");
+        //Modal has been shown, now set a cookie so it never comes back
+        $("#myModalClose").click(function () {
+            $("#myModal").modal("hide");
+        });
+        $('#button_rodo_ok').on('click', function(event) {
+            //event.preventDefault(); // To prevent following the link (optional)
+            document.cookie = "ModalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+        });
+        
+    }
+  </script>
+
+
   <script>
 
       $(document).ready(function(){
@@ -292,6 +351,8 @@
       });
 
   </script>
+
+
 
 
 
