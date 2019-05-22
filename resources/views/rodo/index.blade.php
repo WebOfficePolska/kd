@@ -58,9 +58,6 @@
 						<h5>Polityka prywatności - <a href="{{ asset('storage/pp/polityka_prywatnosci_kamiendesign.pdf') }}">pobierz [pdf]</a></h5>
  
 					</div>
-					<p>
-						
-					</p>
 
 				</div>
 		    </div>
