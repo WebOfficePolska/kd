@@ -17,7 +17,7 @@
 	
 		    <div class="row" style="margin-top: 50pt;">
 				<div class="col-md-12 col-sm-12">
-				    <p class="header-text ">Polityka prywatności i coocies serwisu Kamień Design</p>
+				    <p class="header-text ">Polityka prywatności i cookies serwisu Kamień Design</p>
 				    <div class="underline my-3"></div>	
 
 
