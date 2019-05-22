@@ -56,7 +56,7 @@
 						<p><strong>To tylko najważniejsze informacje! Zachęcamy Cię do pobrania i zapoznania się z umieszczonym poniżej  szczegółowym omówieniem naszej polityki prywatności.</strong></p>
 
 						<h5>Polityka prywatności - <a href="{{ asset('storage/pp/polityka_prywatnosci_kamiendesign.pdf') }}">pobierz [pdf]</a></h5>
-
+ 
 					</div>
 					<p>
 						
