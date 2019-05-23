@@ -16,15 +16,6 @@
 	}
 
 
-	#slot_1 {
-		position: relative;
-		/*background-image: url('images/blog/pu5.jpg');*/
-	}
-
-	#slot_1 .image {
-		width: 100%;
-	}
-
 	.overlay {
 		position: absolute;
 		bottom: 0; 
@@ -36,8 +27,78 @@
 		opacity: 1;
 		color: white;
 		font-size: 20px;
-		padding: 20px;
+		padding: 30px;
 		text-align: center;		
+	}
+
+
+	#col1, #col2, #col3 {
+		padding: 8px;
+	}
+
+	#slot_1, #slot_2, #slot_3, #slot_4, #slot_5 {
+		position: relative;
+	}
+
+	#slot_1 {
+		height: 100%;
+		min-height: 500pt;
+		overflow: hidden;
+	}
+
+
+	#slot_2, #slot_5 {
+		height: 300pt;
+	}
+
+	#slot_3, #slot_4 {
+		height: 200pt;
+
+	}
+
+
+	#slot_1 {
+		background: url('images/blog/pu5.jpg');
+  		background-position: center;
+  		background-size: cover;
+	}
+
+	#slot_2 {
+		background: url('images/blog/s2.jpg');
+  		background-repeat: no-repeat;
+  		background-position: 50% 15%;		
+	}
+
+
+	#slot_3 {
+		background: url('images/blog/s1.jpg');
+  		background-repeat: no-repeat;
+  		background-position: 50% 15%;		
+	}
+
+	#slot_4 {
+		background: url('images/blog/s3.jpg');
+  		background-repeat: no-repeat;
+  		background-position: 50% 15%;		
+	}
+
+
+	#slot_5 {
+		background: url('images/blog/s4.jpg');
+  		background-repeat: no-repeat;
+  		background-position: 50% 15%;		
+	}
+
+
+
+	#slot_1:hover, #slot_1:focus,
+	#slot_2:hover, #slot_2:focus,
+	#slot_3:hover, #slot_3:focus,
+	#slot_4:hover, #slot_4:focus,
+	#slot_5:hover, #slot_5:focus
+	{
+		transform: scale(1.000);
+		transition: all .5s;
 	}
 
 
@@ -55,48 +116,42 @@
 
 	    <div class="col-md-10">
 
-	    	<div class="mt-5">
+	    	<div class="row mt-5">
 
-	    		<div class="d-flex flex-row bg-secondary" style="">
-
-	  				<div id="slot_1" class="p-0 m-2 bg-info d-flex align-items-stretch" style="flex: 50%;">
-	  					<img src="{{ asset('images/blog/pu5.jpg') }}" class="image">
-	  					<div class="overlay">Tytuł artykułu</div>
+	  				<div id="col1" class="col-md-6">
+		  				<div id="slot_1">
+		<!--   					<img src="{{ asset('images/blog/pu5.jpg') }}" class="image img-fluid"> -->
+		  					<div class="overlay">Tytuł art slot 1</div>
+		  				</div>	  					
 	  				</div>
 	  				
-	  				<div class="p-0 m-2 bg-warning" style="flex: 25%">
-	  					<div class="bg-primary m-2" style="height: 200pt;">
-	  						col 1	
+	  				<div id="col2" class="col-md-3">
+
+	  					<div id="slot_2" class="">
+	  						<!-- <img src="{{ asset('images/blog/s1.jpg') }}" class="image img-fluid"> -->
+		  					<div class="overlay">Tytuł artykułu slot 2</div>	  						
 	  					</div>
 
-	  					<div class="bg-primary m-2" style="height: auto;">
-	  						col 2ś
+	  					<div id="slot_3" class="mt-3">
+	  						<!-- <img src="{{ asset('images/blog/s2.jpg') }}" class="image img-fluid"> -->
+	  						<div class="overlay">Tytuł artykułu slot 3</div>
 	  					</div>
 
 	  				</div>
 	  				
-	  				<div class="p-0 m-2 bg-info" style="flex: 25%">
-	  					<div class="bg-primary m-2" style="height: 300pt">
-	  						col 1	
+	  				<div id="col3" class="col-md-3">
+
+	  					<div id="slot_4" class="">
+	  						<!-- <img src="{{ asset('images/blog/s3.jpg') }}" class="image img-fluid"> -->
+		  					<div class="overlay">Tytuł artykułu slot 4</div>	  						
 	  					</div>
 
-	  					<div class="bg-primary m-2" style="height: auto;">
-	  						col 2ś
+	  					<div id="slot_5" class="mt-3" >
+	  						<!-- <img src="{{ asset('images/blog/s4.jpg') }}" class="image img-fluid"> -->
+		  					<div class="overlay">Tytuł artykułu slot 5</div>
 	  					</div>
 	  					
 	  				</div>	    		
-
-				</div>
-
-
-	    		<div class="d-flex flex-row p-3 bg-primary">
-
-	  				<div class="p-2 bg-info">Flex item 1</div>
-	  				<div class="p-2 bg-warning">Flex item 2</div>
-	  				<div class="p-2 bg-primary">Flex item 3</div>	    		
-
-				</div>
-
 
 
 	    	</div>
