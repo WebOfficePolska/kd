@@ -6,8 +6,10 @@
 
     <style>
 	.box {
-	    background: #f0f0f0;
-	    border: 1px solid #c9c9c9;
+	    background: #ebebeb;
+	    border-right: 1px solid #d0d0d0;
+	    padding: 40pt;
+	    min-height: 400pt;
 
 	}
 
@@ -20,7 +22,7 @@
 		position: absolute;
 		bottom: 0; 
 		background: rgb(0, 0, 0);
-		background: rgba(0, 0, 0, 0.5); /* Black see-through */
+		background: rgba(0, 0, 0, 0.7); /* Black see-through */
 		color: #f1f1f1; 
 		width: 100%;
 		transition: .5s ease;
@@ -33,74 +35,83 @@
 
 
 	#col1, #col2, #col3 {
-		padding: 8px;
+		padding: 0px;
+		border: 2pt solid white;
+		overflow: hidden;
 	}
 
 	#slot_1, #slot_2, #slot_3, #slot_4, #slot_5 {
 		position: relative;
+		overflow: hidden;
 	}
 
 	#slot_1 {
-		height: 100%;
-		min-height: 500pt;
-		overflow: hidden;
+		height: 500pt;
+		min-height: 500pt;	
 	}
 
 
 	#slot_2, #slot_5 {
-		height: 300pt;
+		height: 200pt;
 	}
 
 	#slot_3, #slot_4 {
-		height: 200pt;
+		height: 300pt;
 
 	}
 
 
-	#slot_1 {
+	#slot_1 figure {
+		width: 100%;
+		height: 100%;
 		background: url('images/blog/pu5.jpg');
   		background-position: center;
   		background-size: cover;
 	}
 
-	#slot_2 {
+	#slot_2 figure {
+		background: url('images/blog/i2.jpg');
+  		background-position: center;
+  		background-size: cover;
+	}
+
+
+	#slot_3 figure {
 		background: url('images/blog/s2.jpg');
-  		background-repeat: no-repeat;
-  		background-position: 50% 15%;		
+  		background-position: center;
+  		background-size: cover;
+	}
+
+	#slot_4 figure {
+		background: url('images/blog/i1.jpg');
+  		background-position: center;
+  		background-size: cover;
 	}
 
 
-	#slot_3 {
-		background: url('images/blog/s1.jpg');
-  		background-repeat: no-repeat;
-  		background-position: 50% 15%;		
-	}
-
-	#slot_4 {
-		background: url('images/blog/s3.jpg');
-  		background-repeat: no-repeat;
-  		background-position: 50% 15%;		
-	}
-
-
-	#slot_5 {
-		background: url('images/blog/s4.jpg');
-  		background-repeat: no-repeat;
-  		background-position: 50% 15%;		
+	#slot_5 figure {
+		background: url('images/blog/i5.jpg');
+  		background-position: center;
+  		background-size: cover;
 	}
 
 
 
-	#slot_1:hover, #slot_1:focus,
-	#slot_2:hover, #slot_2:focus,
-	#slot_3:hover, #slot_3:focus,
-	#slot_4:hover, #slot_4:focus,
-	#slot_5:hover, #slot_5:focus
+	#slot_1 figure:hover, #slot_1:focus,
+	#slot_2 figure:hover, #slot_2 img:focus,
+	#slot_3 figure:hover, #slot_3 img:focus,
+	#slot_4 figure:hover, #slot_4 img:focus,
+	#slot_5 figure:hover, #slot_5 img:focus
 	{
-		transform: scale(1.000);
+		transform: scale(1.1);
 		transition: all .5s;
 	}
 
+
+	figure {
+		width: 100%;
+		height: 100%;
+	}
 
 
     </style>
@@ -120,7 +131,10 @@
 
 	  				<div id="col1" class="col-md-6">
 		  				<div id="slot_1">
-		<!--   					<img src="{{ asset('images/blog/pu5.jpg') }}" class="image img-fluid"> -->
+		  					<a href="">
+		  						<figure></figure>
+<!-- 		  						<img src="{{ asset('images/blog/i1.jpg') }}" class="image img-fluid"> -->
+		  					</a>
 		  					<div class="overlay">Tytuł art slot 1</div>
 		  				</div>	  					
 	  				</div>
@@ -128,12 +142,16 @@
 	  				<div id="col2" class="col-md-3">
 
 	  					<div id="slot_2" class="">
-	  						<!-- <img src="{{ asset('images/blog/s1.jpg') }}" class="image img-fluid"> -->
+	  						<a href="">
+		  						<figure></figure>
+		  						<!-- <img src="{{ asset('images/blog/i2.jpg') }}" class="image img-fluid img-fluid"> -->
+	  						</a>
 		  					<div class="overlay">Tytuł artykułu slot 2</div>	  						
 	  					</div>
 
-	  					<div id="slot_3" class="mt-3">
-	  						<!-- <img src="{{ asset('images/blog/s2.jpg') }}" class="image img-fluid"> -->
+	  					<div id="slot_3" style="border-top: 4px solid white;">
+	  							<figure></figure>
+<!-- 	  						<img src="{{ asset('images/blog/s2.jpg') }}" class="image img-fluid img-fluid"> -->
 	  						<div class="overlay">Tytuł artykułu slot 3</div>
 	  					</div>
 
@@ -142,12 +160,18 @@
 	  				<div id="col3" class="col-md-3">
 
 	  					<div id="slot_4" class="">
-	  						<!-- <img src="{{ asset('images/blog/s3.jpg') }}" class="image img-fluid"> -->
+	  						<a href="">
+	  							<figure></figure>
+	  							<!-- <img src="{{ asset('images/blog/i3.jpg') }}" class="image img-fluid img-fluid w-100 h-100"> -->
+	  						</a>
 		  					<div class="overlay">Tytuł artykułu slot 4</div>	  						
 	  					</div>
 
-	  					<div id="slot_5" class="mt-3" >
-	  						<!-- <img src="{{ asset('images/blog/s4.jpg') }}" class="image img-fluid"> -->
+	  					<div id="slot_5" class=""  style="border-top: 4px solid white;" >
+	  						<a href="">
+		  						<figure></figure>
+								<!-- <img src="{{ asset('images/blog/i5.jpg') }}" class="image img-fluid img-fluid w-100 h-100"> -->
+	  						</a>
 		  					<div class="overlay">Tytuł artykułu slot 5</div>
 	  					</div>
 	  					
