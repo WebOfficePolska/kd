@@ -150,8 +150,10 @@
 	  					</div>
 
 	  					<div id="slot_3" style="border-top: 4px solid white;">
+	  						<a href="">
 	  							<figure></figure>
-<!-- 	  						<img src="{{ asset('images/blog/s2.jpg') }}" class="image img-fluid img-fluid"> -->
+	  						</a>
+<!-- 	  					<img src="{{ asset('images/blog/s2.jpg') }}" class="image img-fluid img-fluid"> -->
 	  						<div class="overlay">Tytuł artykułu slot 3</div>
 	  					</div>
 
