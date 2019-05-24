@@ -24,6 +24,7 @@ Route::get('/oferta', 'OfferController@index');
 Route::get('/galeria', 'GalleryController@index');
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/rodo', function () {return view('rodo/index');});
+Route::get('/blog/art', function () {return view('blog/show');});
 
 
 Route::get('/inspiracje', function () {return view('inspiracje/index');});

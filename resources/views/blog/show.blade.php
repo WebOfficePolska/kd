@@ -5,13 +5,6 @@
 @section('default_content_text')
 
     <style>
-
-    a:link, a:visited {
-    	text-decoration: none;
-    	color: #646462;
-    }
-
-
 	.box {
 	    background: #fff;
 	    border-right: 1px solid #d0d0d0;
@@ -87,27 +80,27 @@
 	}
 
 	#slot_2 figure {
-		background: url('images/blog/i2.jpg');
+		background: url('/images/blog/i2.jpg');
   		background-position: center;
   		background-size: cover;
 	}
 
 
 	#slot_3 figure {
-		background: url('images/blog/s2.jpg');
+		background: url('/images/blog/s2.jpg');
   		background-position: center;
   		background-size: cover;
 	}
 
 	#slot_4 figure {
-		background: url('images/blog/i1.jpg');
+		background: url('/images/blog/i1.jpg');
   		background-position: center;
   		background-size: cover;
 	}
 
 
 	#slot_5 figure {
-		background: url('images/blog/i5.jpg');
+		background: url('/images/blog/i5.jpg');
   		background-position: center;
   		background-size: cover;
 	}
@@ -192,85 +185,53 @@
 
 		    <div class="row mt-5" style="border-left: 1px solid #d0d0d0;">		    		
 	
-				<div class="col-md-4 box">
-					<div class="">
-						<a href="/blog/art">
-					    	<img src="/images/blog/arts/main.jpg" class="img-fluid pt-3 pb-3 w-100" />
-						</a>
-						<a href="/blog/art">
-					    	<h4>Jakiej grubości płytkę granitową?</h4>
-					    	<p>Porady ekspertów: Madzi i Klaudka</p>						
-						</a>
-					</div>
-				</div>
+		    		<div class="col"></div>
+
+		    		<div class="col-md-10">
+
+		    			<h2>Jakiej grubości płytkę granitową należy stosować na taras?</h2>
+		    			<h5>/Porady Eksperta/</h5>
+		    			<div class="row mt-5 mb-5">
+		    				<div class="col-md-3">
+		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
+		    				</div>
+
+		    				<div class="col-md-3">
+		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
+		    				</div>
+		    				<div class="col-md-3">
+		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
+		    				</div>
+		    				<div class="col-md-3">
+		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
+		    				</div>
+
+		    				
+		    			</div>
+
+		    			<hr>
+
+		    			<p>		    				
+		    				Odpowiedź uzależniona jest od rodzaju tarasu i przeznaczenia. Jeśli taras wykonany jest na wylewce betonowej i przeznaczony do ruchu pieszego (nie wjeżdżają na niego samochody czy wózki widłowe), to każda grubość płyty kamiennej jest odpowiednią, np. od 1 cm do 3 cm (grubsze też, ale jest to rozwiązanie nieekonomiczne).
+		    			</p>
+
+						<p>
+							Jeśli taras układany jest bezpośrednio na gruncie, z odpowiednimi podsypkami żwirowo-piaskowymi i również przeznaczony do ruchu pieszego, to nie należy stosować cieńszych płyt niż 3 cm, gdyż przy cieńszych płytach, a więc lżejszych, zamarzająca pod nimi woda może po zimie zdeformować całą posadzkę.
+						</p>
+
+		    			<p>		    				
+		    				Odpowiedź uzależniona jest od rodzaju tarasu i przeznaczenia. Jeśli taras wykonany jest na wylewce betonowej i przeznaczony do ruchu pieszego (nie wjeżdżają na niego samochody czy wózki widłowe), to każda grubość płyty kamiennej jest odpowiednią, np. od 1 cm do 3 cm (grubsze też, ale jest to rozwiązanie nieekonomiczne).
+		    			</p>
+
+						<p>
+							Jeśli taras układany jest bezpośrednio na gruncie, z odpowiednimi podsypkami żwirowo-piaskowymi i również przeznaczony do ruchu pieszego, to nie należy stosować cieńszych płyt niż 3 cm, gdyż przy cieńszych płytach, a więc lżejszych, zamarzająca pod nimi woda może po zimie zdeformować całą posadzkę.
+						</p>
 
 
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
+		    		
+		    		</div>
 
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
+		    		<div class="col"></div>
 
 			</div>
 
