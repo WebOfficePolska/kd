@@ -6,15 +6,16 @@
 
     <style>
 	.box {
-	    background: #ebebeb;
+	    background: #fff;
 	    border-right: 1px solid #d0d0d0;
+	    border-top: 1px solid #d0d0d0;
 	    padding: 40pt;
 	    min-height: 400pt;
 
 	}
 
 	.box:hover {
-	    background: #fff;
+	    background: #ebebeb;
 	}
 
 
@@ -133,30 +134,24 @@
 		  				<div id="slot_1">
 		  					<a href="">
 		  						<figure></figure>
-<!-- 		  						<img src="{{ asset('images/blog/i1.jpg') }}" class="image img-fluid"> -->
 		  					</a>
 		  					<div class="overlay">Tytuł art slot 1</div>
 		  				</div>	  					
 	  				</div>
 	  				
 	  				<div id="col2" class="col-md-3">
-
 	  					<div id="slot_2" class="">
 	  						<a href="">
 		  						<figure></figure>
-		  						<!-- <img src="{{ asset('images/blog/i2.jpg') }}" class="image img-fluid img-fluid"> -->
 	  						</a>
 		  					<div class="overlay">Tytuł artykułu slot 2</div>	  						
 	  					</div>
-
 	  					<div id="slot_3" style="border-top: 4px solid white;">
 	  						<a href="">
 	  							<figure></figure>
 	  						</a>
-<!-- 	  					<img src="{{ asset('images/blog/s2.jpg') }}" class="image img-fluid img-fluid"> -->
 	  						<div class="overlay">Tytuł artykułu slot 3</div>
 	  					</div>
-
 	  				</div>
 	  				
 	  				<div id="col3" class="col-md-3">
@@ -164,7 +159,6 @@
 	  					<div id="slot_4" class="">
 	  						<a href="">
 	  							<figure></figure>
-	  							<!-- <img src="{{ asset('images/blog/i3.jpg') }}" class="image img-fluid img-fluid w-100 h-100"> -->
 	  						</a>
 		  					<div class="overlay">Tytuł artykułu slot 4</div>	  						
 	  					</div>
@@ -172,19 +166,15 @@
 	  					<div id="slot_5" class=""  style="border-top: 4px solid white;" >
 	  						<a href="">
 		  						<figure></figure>
-								<!-- <img src="{{ asset('images/blog/i5.jpg') }}" class="image img-fluid img-fluid w-100 h-100"> -->
 	  						</a>
 		  					<div class="overlay">Tytuł artykułu slot 5</div>
 	  					</div>
-	  					
 	  				</div>	    		
-
 
 	    	</div>
 
 
-		    <div class="row">
-		    		
+		    <div class="row mt-5" style="border-left: 1px solid #d0d0d0;">		    		
 	
 				<div class="col-md-4 box">
 				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
@@ -203,6 +193,56 @@
 				    </p>
 				</div>
 
+
+				<div class="col-md-4 box">
+				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
+				    <h4>Komienie w praktyce</h4>
+				    <p>
+					To jest kawalindek opisu.
+				    </p>
+				</div>
+
+
+				<div class="col-md-4 box">
+				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
+				    <h4>Komienie w praktyce</h4>
+				    <p>
+					To jest kawalindek opisu.
+				    </p>
+				</div>
+
+				<div class="col-md-4 box">
+				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
+				    <h4>Komienie w praktyce</h4>
+				    <p>
+					To jest kawalindek opisu.
+				    </p>
+				</div>
+
+				<div class="col-md-4 box">
+				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
+				    <h4>Komienie w praktyce</h4>
+				    <p>
+					To jest kawalindek opisu.
+				    </p>
+				</div>
+
+
+				<div class="col-md-4 box">
+				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
+				    <h4>Komienie w praktyce</h4>
+				    <p>
+					To jest kawalindek opisu.
+				    </p>
+				</div>
+
+				<div class="col-md-4 box">
+				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
+				    <h4>Komienie w praktyce</h4>
+				    <p>
+					To jest kawalindek opisu.
+				    </p>
+				</div>
 
 				<div class="col-md-4 box">
 				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
