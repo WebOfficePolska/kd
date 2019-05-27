@@ -22,9 +22,9 @@ Route::get('/kamienie/{id}/getpdf','StoneController@getPDF');
 Route::get('/kamienie/{id}/{title?}', 'StoneController@show')->name('kamien.show');
 Route::get('/oferta', 'OfferController@index');
 Route::get('/galeria', 'GalleryController@index');
-Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/rodo', function () {return view('rodo/index');});
-Route::get('/blog/art', function () {return view('blog/show');});
+Route::get('/blog', function () {return view('blog/index');});
+Route::get('/blog/art/{id}', function () {return view('blog/show');});
 
 
 Route::get('/inspiracje', function () {return view('inspiracje/index');});

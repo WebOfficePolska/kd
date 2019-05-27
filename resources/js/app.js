@@ -124,6 +124,26 @@ const vm = new Vue({
 
 
 
+const pc = new Vue({
+  el: '#post-content',
+
+  data: {
+        post: []
+  },
+  
+  created() {
+    axios.get("http://z-warszawy.pl/wp-json/wp/v2/posts/10?_embed")
+    .then(response => {this.post = response.data;})
+    .catch( error => {
+      window.alert( error );
+    } );
+  }
+});
+
+
+
+
+
 
 $(function () {
 

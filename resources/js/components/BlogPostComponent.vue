@@ -5,8 +5,9 @@
                 <img :src="_embedded['wp:featuredmedia'][0].source_url" alt="" class="img-fluid pt-3 pb-3 w-100">
             </a>
 
-            <a href="/blog/art">
-                <h4> {{title.rendered}} {{id}} {{ _embedded['wp:term'][0][0].name}}</h4>
+            <a :href="'/blog/art/' + id">
+                <h4> {{title.rendered}}</h4>
+                <h6> /{{ _embedded['wp:term'][0][0].name}}/ </h6>
             </a>
         </div>
     </div>

@@ -1777,6 +1777,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -67446,16 +67447,11 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "/blog/art" } }, [
-        _c("h4", [
-          _vm._v(
-            " " +
-              _vm._s(_vm.title.rendered) +
-              " " +
-              _vm._s(_vm.id) +
-              " " +
-              _vm._s(_vm._embedded["wp:term"][0][0].name)
-          )
+      _c("a", { attrs: { href: "/blog/art/" + _vm.id } }, [
+        _c("h4", [_vm._v(" " + _vm._s(_vm.title.rendered))]),
+        _vm._v(" "),
+        _c("h6", [
+          _vm._v(" /" + _vm._s(_vm._embedded["wp:term"][0][0].name) + "/ ")
         ])
       ])
     ])
@@ -82438,6 +82434,21 @@ var vm = new Vue({
 
     axios.get("http://z-warszawy.pl//wp-json/wp/v2/posts?_embed").then(function (response) {
       _this2.posts = response.data;
+    })["catch"](function (error) {
+      window.alert(error);
+    });
+  }
+});
+var pc = new Vue({
+  el: '#post-content',
+  data: {
+    post: []
+  },
+  created: function created() {
+    var _this3 = this;
+
+    axios.get("http://z-warszawy.pl/wp-json/wp/v2/posts/10?_embed").then(function (response) {
+      _this3.post = response.data;
     })["catch"](function (error) {
       window.alert(error);
     });

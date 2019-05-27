@@ -183,51 +183,15 @@
 	    	</div>
 
 
-		    <div class="row mt-5" style="border-left: 1px solid #d0d0d0;">		    		
+		    <div id="post-content" class="row mt-5" style="border-left: 1px solid #d0d0d0;">		    		
 	
 		    		<div class="col"></div>
 
 		    		<div class="col-md-10">
 
-		    			<h2>Jakiej grubości płytkę granitową należy stosować na taras?</h2>
-		    			<h5>/Porady Eksperta/</h5>
-		    			<div class="row mt-5 mb-5">
-		    				<div class="col-md-3">
-		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
-		    				</div>
-
-		    				<div class="col-md-3">
-		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
-		    				</div>
-		    				<div class="col-md-3">
-		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
-		    				</div>
-		    				<div class="col-md-3">
-		    					<img src="/images/blog/arts/main.jpg" class="img-fluid">
-		    				</div>
-
-		    				
-		    			</div>
-
-		    			<hr>
-
-		    			<p>		    				
-		    				Odpowiedź uzależniona jest od rodzaju tarasu i przeznaczenia. Jeśli taras wykonany jest na wylewce betonowej i przeznaczony do ruchu pieszego (nie wjeżdżają na niego samochody czy wózki widłowe), to każda grubość płyty kamiennej jest odpowiednią, np. od 1 cm do 3 cm (grubsze też, ale jest to rozwiązanie nieekonomiczne).
-		    			</p>
-
-						<p>
-							Jeśli taras układany jest bezpośrednio na gruncie, z odpowiednimi podsypkami żwirowo-piaskowymi i również przeznaczony do ruchu pieszego, to nie należy stosować cieńszych płyt niż 3 cm, gdyż przy cieńszych płytach, a więc lżejszych, zamarzająca pod nimi woda może po zimie zdeformować całą posadzkę.
-						</p>
-
-		    			<p>		    				
-		    				Odpowiedź uzależniona jest od rodzaju tarasu i przeznaczenia. Jeśli taras wykonany jest na wylewce betonowej i przeznaczony do ruchu pieszego (nie wjeżdżają na niego samochody czy wózki widłowe), to każda grubość płyty kamiennej jest odpowiednią, np. od 1 cm do 3 cm (grubsze też, ale jest to rozwiązanie nieekonomiczne).
-		    			</p>
-
-						<p>
-							Jeśli taras układany jest bezpośrednio na gruncie, z odpowiednimi podsypkami żwirowo-piaskowymi i również przeznaczony do ruchu pieszego, to nie należy stosować cieńszych płyt niż 3 cm, gdyż przy cieńszych płytach, a więc lżejszych, zamarzająca pod nimi woda może po zimie zdeformować całą posadzkę.
-						</p>
-
-
+		    			<h2 v-html="post.title.rendered"></h2>
+		    			<h5>/categotia/</h5>
+		    			<div class="row col-md-6 mt-5 mb-5" v-html="post.content.rendered"></div>
 		    		
 		    		</div>
 
