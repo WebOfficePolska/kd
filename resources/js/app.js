@@ -23,10 +23,19 @@ Vue.use(BootstrapVue);
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
+
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+Vue.component('blog-post', 
+    require('./components/BlogPostComponent.vue').default, 
+    {
+        props: ['title', 'post_id']
+    }
+    
+)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -34,15 +43,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
 const app = new Vue({
-
-
     el: '#app',
 
     mounted: function () {
     	console.log("mounted...");
     },
-
 
     computed: {
       customerName() {
@@ -50,22 +57,16 @@ const app = new Vue({
       }
     },
 
-
     data: {
-
     	stones: [],
-
     	percent: 0,
     	message: " ",    	
     	project_file: null,
     },
 
-
     methods: {
 
-
     	uploadFile: function(){
-
     		var _this = this;
     		var elmnt = document.getElementById("project_file");
     		console.log(elmnt.files[0]);
@@ -98,6 +99,29 @@ const app = new Vue({
 
 
 
+const vm = new Vue({
+  el: '#post',
+
+  filters: {
+        moment: function (date) {
+            return moment(date).format('YYYY/MM/DD HH:mm');
+        }
+    },
+  
+  data: {
+        posts: []
+
+  },
+  
+  created() {
+    axios.get("http://z-warszawy.pl//wp-json/wp/v2/posts?_embed")
+    .then(response => {this.posts = response.data;})
+    .catch( error => {
+      window.alert( error );
+    } );
+  }
+});
+
 
 
 
@@ -119,9 +143,7 @@ $(function () {
 
 	        	$.each(response, function(key, data){
 
-
 						$("#stone_type").append('<option value="' + data.stone_type + '">' + data.stone_type + '</option>');
-
 
 	        	});
 

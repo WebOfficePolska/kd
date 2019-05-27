@@ -10,9 +10,6 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
 
 
@@ -22,60 +19,58 @@
 
     <style></style>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96974681-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96974681-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-96974681-4');
-</script>
-
-
-<style>
-
-.navbar {
-}
+      gtag('config', 'UA-96974681-4');
+    </script>
 
 
-.navbar-brand {
-    margin-right: 0px !important;
-    font-size: 18pt; 
-    padding-left:0px; 
-    padding-right: 0px;
-}
+    <style>
 
-.social_media a:link {
-    color: #808080 !important;
-}
-
-.social_media a:visited {
-    color: #808080 !important;
-}
+        .navbar {
+        }
 
 
-@media (min-width: 768px) {
-    .text-sm-left {
-        text-align: left !important;
-    }
+        .navbar-brand {
+            margin-right: 0px !important;
+            font-size: 18pt; 
+            padding-left:0px; 
+            padding-right: 0px;
+        }
 
-    .text-sm-right {
-        text-align: right !important;
-    }
+        .social_media a:link {
+            color: #808080 !important;
+        }
 
-    .text-sm-center {
-        text-align: center !important;
-    }
-
-    .text-sm-justify {
-        text-align: justify !important;
-    }
-}
+        .social_media a:visited {
+            color: #808080 !important;
+        }
 
 
+        @media (min-width: 768px) {
+            .text-sm-left {
+                text-align: left !important;
+            }
 
-</style>
+            .text-sm-right {
+                text-align: right !important;
+            }
+
+            .text-sm-center {
+                text-align: center !important;
+            }
+
+            .text-sm-justify {
+                text-align: justify !important;
+            }
+        }
+
+    </style>
 
 
 

@@ -190,87 +190,32 @@
 	    	</div>
 
 
-		    <div class="row mt-5" style="border-left: 1px solid #d0d0d0;">		    		
+		    <div id="post" class="row mt-5" style="border-left: 1px solid #d0d0d0;" >		    		
 	
-				<div class="col-md-4 box">
+
+				<blog-post 
+					v-for="post in posts" 
+					v-bind="post"
+					v-bind:key="post.id">
+				</blog-post>
+
+<!-- 
+				<div class="col-md-4 box" v-for="post in posts">
 					<div class="">
-						<a href="/blog/art">
-					    	<img src="/images/blog/arts/main.jpg" class="img-fluid pt-3 pb-3 w-100" />
+						<a :href="'/blog/art/' + post.id">
+					    	<img :src="post._embedded['wp:featuredmedia'][0].source_url" alt="" class="img-fluid pt-3 pb-3 w-100">
 						</a>
+
 						<a href="/blog/art">
-					    	<h4>Jakiej grubości płytkę granitową?</h4>
-					    	<p>Porady ekspertów: Madzi i Klaudka</p>						
+					    	<h4> @{{post.title.rendered}} @{{post.id}}</h4>
+					    	<div class="entry-content" v-html="post.content.rendered"></div>
 						</a>
 					</div>
-				</div>
+				</div> 
+-->
 
 
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
 
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
-
-				<div class="col-md-4 box">
-				    <img src="http://kd.wop.pl/storage/stones/arabescato_cardellino/main.jpg" class="img-fluid pt-3 pb-3" />
-				    <h4>Komienie w praktyce</h4>
-				    <p>
-					To jest kawalindek opisu.
-				    </p>
-				</div>
 
 			</div>
 
