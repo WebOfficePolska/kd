@@ -191,6 +191,7 @@
 
 		    			<h2 v-html="post.title.rendered"></h2>
 		    			<h5>/categotia/</h5>
+		    			<input id="post_id" type="hidden" name="posy_id" value="{{ request()->route()->id }}">
 		    			<div class="row col-md-6 mt-5 mb-5" v-html="post.content.rendered"></div>
 		    		
 		    		</div>

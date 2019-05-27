@@ -128,11 +128,12 @@ const pc = new Vue({
   el: '#post-content',
 
   data: {
+        post_id:  document.getElementById('post_id').value,
         post: []
   },
   
   created() {
-    axios.get("http://z-warszawy.pl/wp-json/wp/v2/posts/10?_embed")
+    axios.get("http://z-warszawy.pl/wp-json/wp/v2/posts/"+this.post_id+"?_embed")
     .then(response => {this.post = response.data;})
     .catch( error => {
       window.alert( error );

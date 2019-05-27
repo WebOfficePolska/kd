@@ -82442,12 +82442,13 @@ var vm = new Vue({
 var pc = new Vue({
   el: '#post-content',
   data: {
+    post_id: document.getElementById('post_id').value,
     post: []
   },
   created: function created() {
     var _this3 = this;
 
-    axios.get("http://z-warszawy.pl/wp-json/wp/v2/posts/10?_embed").then(function (response) {
+    axios.get("http://z-warszawy.pl/wp-json/wp/v2/posts/" + this.post_id + "?_embed").then(function (response) {
       _this3.post = response.data;
     })["catch"](function (error) {
       window.alert(error);
