@@ -7,7 +7,7 @@
 
             <a :href="'/blog/art/' + id">
                 <h4> {{title.rendered}}</h4>
-                <h6> /{{ _embedded['wp:term'][0][0].name}}/ </h6>
+                <! -- <h6> /{{ _embedded['wp:term'][0][0].name}}/ </h6> -->
             </a>
         </div>
     </div>
