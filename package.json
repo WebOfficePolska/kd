@@ -27,7 +27,7 @@
         "bootstrap-vue": "^2.0.0-rc.19",
         "font-awesome": "^4.7.0",
         "jquery-parallax.js": "^1.5.0",
-        "jquery-validation": "^1.19.0",
+        "jquery-validation": "^1.19.4",
         "propper": "^1.0.3",
         "themify-icons": "^1.0.0",
         "typeface-metropolis": "0.0.68",
